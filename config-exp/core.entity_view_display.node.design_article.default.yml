@@ -1,0 +1,37 @@
+uuid: c94f1590-32e6-4e42-9b9d-76580f3cb5f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.design_article.body
+    - field.field.node.design_article.field_taxo_design
+    - node.type.design_article
+  module:
+    - text
+    - user
+id: node.design_article.default
+targetEntityType: node
+bundle: design_article
+mode: default
+content:
+  body:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_taxo_design:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

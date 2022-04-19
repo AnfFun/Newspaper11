@@ -1,0 +1,23 @@
+uuid: 0df8c209-9d63-423f-8c37-ab180a7e9089
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: sitebranding
+theme: bartik
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

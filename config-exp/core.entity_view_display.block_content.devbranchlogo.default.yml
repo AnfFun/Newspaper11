@@ -1,0 +1,24 @@
+uuid: 1e70ffb0-f2ae-4579-ab20-1b126a75940a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.devbranchlogo
+    - field.field.block_content.devbranchlogo.field_branch_logo
+  module:
+    - image
+id: block_content.devbranchlogo.default
+targetEntityType: block_content
+bundle: devbranchlogo
+mode: default
+content:
+  field_branch_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

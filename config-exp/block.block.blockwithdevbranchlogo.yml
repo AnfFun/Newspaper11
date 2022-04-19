@@ -1,0 +1,25 @@
+uuid: d8abb9e9-3dcc-4110-bbc6-1010e69663b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:devbranchlogo:18bb9bd8-4f5a-461c-8cf6-dff0ac135d01'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: blockwithdevbranchlogo
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:18bb9bd8-4f5a-461c-8cf6-dff0ac135d01'
+settings:
+  id: 'block_content:18bb9bd8-4f5a-461c-8cf6-dff0ac135d01'
+  label: 'Block with Dev-Branch logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

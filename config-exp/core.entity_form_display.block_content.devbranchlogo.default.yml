@@ -1,0 +1,32 @@
+uuid: 0131518b-acb0-4493-ad08-23d03fe83e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.devbranchlogo
+    - field.field.block_content.devbranchlogo.field_branch_logo
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.devbranchlogo.default
+targetEntityType: block_content
+bundle: devbranchlogo
+mode: default
+content:
+  field_branch_logo:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

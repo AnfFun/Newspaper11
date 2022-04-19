@@ -1,0 +1,8 @@
+uuid: d21c9cf2-a449-4a5d-b4a0-3d7a271c2573
+langcode: en
+status: true
+dependencies: {  }
+name: MainTax
+vid: maintax
+description: 'The main taxonomy on pages'
+weight: 0

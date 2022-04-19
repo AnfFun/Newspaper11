@@ -1,0 +1,10 @@
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://newspaper-11-logo-white (1)_0.png'
+  use_default: false

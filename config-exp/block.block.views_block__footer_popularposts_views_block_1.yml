@@ -1,0 +1,24 @@
+uuid: 8246ca08-7542-4c2b-8850-69d5e48af478
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.footer_popularposts_views
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__footer_popularposts_views_block_1
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'views_block:footer_popularposts_views-block_1'
+settings:
+  id: 'views_block:footer_popularposts_views-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

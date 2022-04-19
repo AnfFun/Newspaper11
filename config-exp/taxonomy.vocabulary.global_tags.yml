@@ -1,0 +1,8 @@
+uuid: d755b1da-febb-488e-8d12-f0b692877526
+langcode: en
+status: true
+dependencies: {  }
+name: SecondTax
+vid: global_tags
+description: 'Second tags which we can see on our site'
+weight: 0

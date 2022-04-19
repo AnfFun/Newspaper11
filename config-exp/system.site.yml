@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: a48c4722-3185-407a-9056-2bb5341b6a98
+name: Newspaper11
+mail: m.prokofiev@dev-branch.com
+slogan: 'Amazing news'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,37 @@
+uuid: 277781e6-7505-4c5d-9352-8607a4961532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.primarymenu.body
+    - field.field.node.primarymenu.field_taxo_prim_menu
+    - node.type.primarymenu
+  module:
+    - text
+    - user
+id: node.primarymenu.default
+targetEntityType: node
+bundle: primarymenu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_taxo_prim_menu:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

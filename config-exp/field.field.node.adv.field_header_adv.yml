@@ -1,0 +1,38 @@
+uuid: 0303b18e-2843-4d57-8e3f-b13a1aa6af5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_adv
+    - node.type.adv
+  module:
+    - image
+id: node.adv.field_header_adv
+field_name: field_header_adv
+entity_type: node
+bundle: adv
+label: header_adv
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

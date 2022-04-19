@@ -1,0 +1,39 @@
+uuid: 79647e7a-627e-4653-95a5-4ea4883104ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.adv.body
+    - field.field.node.adv.field_header_adv
+    - node.type.adv
+  module:
+    - image
+    - text
+    - user
+id: node.adv.default
+targetEntityType: node
+bundle: adv
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_header_adv:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

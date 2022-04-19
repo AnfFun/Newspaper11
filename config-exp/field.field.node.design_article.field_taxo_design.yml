@@ -1,0 +1,35 @@
+uuid: 14c865eb-8b32-47df-a133-62e94d865a27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxo_design
+    - node.type.design_article
+    - taxonomy.vocabulary.global_tags
+    - taxonomy.vocabulary.maintax
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.test
+id: node.design_article.field_taxo_design
+field_name: field_taxo_design
+entity_type: node
+bundle: design_article
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      maintax: maintax
+      global_tags: global_tags
+      tags: tags
+      test: test
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: maintax
+field_type: entity_reference
