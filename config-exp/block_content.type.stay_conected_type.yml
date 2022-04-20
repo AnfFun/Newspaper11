@@ -1,0 +1,8 @@
+uuid: fbb2e539-5473-4dfe-ad8a-d90e1b3def3c
+langcode: en
+status: true
+dependencies: {  }
+id: stay_conected_type
+label: 'Stay conected type'
+revision: 0
+description: ''
