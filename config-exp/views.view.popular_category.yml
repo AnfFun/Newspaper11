@@ -7,7 +7,7 @@ dependencies:
     - taxonomy
     - user
 id: popular_category
-label: Popular_Category
+label: 'Popular Category'
 module: views
 description: ''
 tag: ''

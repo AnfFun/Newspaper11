@@ -3,13 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_image
   module:
     - image
     - node
     - user
 id: footer_view_block
-label: footer_view_block
+label: 'Footer editor picks view block'
 module: views
 description: ''
 tag: ''
@@ -276,12 +277,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options:

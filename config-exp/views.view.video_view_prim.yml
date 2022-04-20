@@ -16,7 +16,7 @@ dependencies:
     - taxonomy
     - user
 id: video_view_prim
-label: Video_view_prim
+label: 'Video view primary menu'
 module: views
 description: ''
 tag: ''

@@ -16,7 +16,7 @@ dependencies:
     - taxonomy
     - user
 id: fashion_view
-label: Fashion_View
+label: 'Fashion view'
 module: views
 description: ''
 tag: ''

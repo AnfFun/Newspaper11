@@ -16,7 +16,7 @@ dependencies:
     - taxonomy
     - user
 id: ga
-label: Gadgets_view_prim
+label: 'Gadgets view primary menu'
 module: views
 description: ''
 tag: ''

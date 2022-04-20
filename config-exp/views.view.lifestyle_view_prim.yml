@@ -16,7 +16,7 @@ dependencies:
     - taxonomy
     - user
 id: lifestyle_view_prim
-label: Lifestyle_view_prim
+label: 'Lifestyle view primary menu'
 module: views
 description: ''
 tag: ''

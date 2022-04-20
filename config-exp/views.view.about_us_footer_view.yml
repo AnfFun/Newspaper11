@@ -2,11 +2,13 @@ uuid: 3664475c-1f89-4094-a8b6-a194e687adf4
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
 id: about_us_footer_view
-label: about_us_footer_view
+label: 'About us footer views'
 module: views
 description: ''
 tag: ''
@@ -233,7 +235,9 @@ display:
           wrapper_class: item-list
           class: ''
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          view_mode: teaser
       query:
         type: views_query
         options:
