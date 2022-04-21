@@ -4,16 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.social_link.body
+    - field.field.node.social_link.field_link_sidebar
+    - field.field.node.social_link.field_link_sidebar2
+    - field.field.node.social_link.field_link_sidebar3
     - field.field.node.social_link.field_stay_conected_img_link
     - field.field.node.social_link.field_stay_conected_img_link2
     - field.field.node.social_link.field_stay_conected_img_link3
-    - field.field.node.social_link.field_text_link1
-    - field.field.node.social_link.field_text_link2
-    - field.field.node.social_link.field_text_link3
     - field.field.node.social_link.layout_builder__layout
     - node.type.social_link
   module:
     - layout_builder
+    - link
     - text
     - user
 third_party_settings:
@@ -47,24 +48,88 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          d79d2ea6-acc1-44ea-95a1-1b66c38add89:
-            uuid: d79d2ea6-acc1-44ea-95a1-1b66c38add89
+          1482f911-93fb-41d2-8a40-e1b1de3d383f:
+            uuid: 1482f911-93fb-41d2-8a40-e1b1de3d383f
+            region: first
+            configuration:
+              id: 'field_block:node:social_link:field_link_sidebar'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b9cbcefd-409f-45d5-bd5e-78f5c6ac2741:
+            uuid: b9cbcefd-409f-45d5-bd5e-78f5c6ac2741
             region: second
             configuration:
-              id: 'field_block:node:social_link:field_text_link1'
-              label: text-link1
+              id: 'field_block:node:social_link:field_link_sidebar'
+              label: 'Link sidebar'
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: string
+                type: link
                 label: hidden
                 settings:
-                  link_to_entity: false
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
                 third_party_settings: {  }
             weight: 0
+            additional: {  }
+          e3e97778-8d33-45e5-8bb2-bd99c4f04af6:
+            uuid: e3e97778-8d33-45e5-8bb2-bd99c4f04af6
+            region: first
+            configuration:
+              id: 'field_block:node:social_link:field_link_sidebar2'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          711fade6-60f5-4ad0-b0c1-391e87775bf4:
+            uuid: 711fade6-60f5-4ad0-b0c1-391e87775bf4
+            region: first
+            configuration:
+              id: 'field_block:node:social_link:field_link_sidebar3'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
@@ -93,22 +158,26 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          a2c0b654-9395-416d-a452-e6af274cbf63:
-            uuid: a2c0b654-9395-416d-a452-e6af274cbf63
+          ebf855e0-c773-45c6-9c56-a21c66c0188e:
+            uuid: ebf855e0-c773-45c6-9c56-a21c66c0188e
             region: second
             configuration:
-              id: 'field_block:node:social_link:field_text_link2'
-              label: text-link2
+              id: 'field_block:node:social_link:field_link_sidebar'
+              label: 'Link sidebar'
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: string
-                label: above
+                type: link
+                label: hidden
                 settings:
-                  link_to_entity: false
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -139,22 +208,26 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          5ac1d035-166d-4bdd-9cfe-1860a6b276c2:
-            uuid: 5ac1d035-166d-4bdd-9cfe-1860a6b276c2
+          1aba54f4-0524-41b1-a2fc-46624c9325cd:
+            uuid: 1aba54f4-0524-41b1-a2fc-46624c9325cd
             region: second
             configuration:
-              id: 'field_block:node:social_link:field_text_link3'
-              label: text-link3
+              id: 'field_block:node:social_link:field_link_sidebar'
+              label: 'Link sidebar'
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: string
-                label: above
+                type: link
+                label: hidden
                 settings:
-                  link_to_entity: false
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -171,6 +244,42 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_link_sidebar:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 108
+    region: first
+  field_link_sidebar2:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 109
+    region: first
+  field_link_sidebar3:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 110
+    region: first
   field_stay_conected_img_link:
     type: entity_reference_entity_view
     label: above
@@ -197,30 +306,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 106
-    region: content
-  field_text_link1:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_text_link2:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_text_link3:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 107
     region: content
   links:
     settings: {  }

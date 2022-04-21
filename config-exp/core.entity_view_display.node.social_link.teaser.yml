@@ -5,12 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.social_link.body
+    - field.field.node.social_link.field_link_sidebar
+    - field.field.node.social_link.field_link_sidebar2
+    - field.field.node.social_link.field_link_sidebar3
     - field.field.node.social_link.field_stay_conected_img_link
     - field.field.node.social_link.field_stay_conected_img_link2
     - field.field.node.social_link.field_stay_conected_img_link3
-    - field.field.node.social_link.field_text_link1
-    - field.field.node.social_link.field_text_link2
-    - field.field.node.social_link.field_text_link3
     - field.field.node.social_link.layout_builder__layout
     - node.type.social_link
   module:
@@ -35,10 +35,10 @@ content:
     weight: 100
     region: content
 hidden:
+  field_link_sidebar: true
+  field_link_sidebar2: true
+  field_link_sidebar3: true
   field_stay_conected_img_link: true
   field_stay_conected_img_link2: true
   field_stay_conected_img_link3: true
-  field_text_link1: true
-  field_text_link2: true
-  field_text_link3: true
   layout_builder__layout: true

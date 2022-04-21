@@ -1,0 +1,28 @@
+uuid: f19f8738-ab83-4c00-8798-98f0ea99f62b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_sidebar
+    - node.type.social_link
+  module:
+    - link
+id: node.social_link.field_link_sidebar
+field_name: field_link_sidebar
+entity_type: node
+bundle: social_link
+label: 'Link sidebar'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.facebook.com/'
+    title: 'https://www.facebook.com/'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
