@@ -1,0 +1,29 @@
+uuid: 9a336cf5-da56-4f9f-b022-70179925ef09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stay_conected_img_link3
+    - media.type.image
+    - node.type.social_link
+id: node.social_link.field_stay_conected_img_link3
+field_name: field_stay_conected_img_link3
+entity_type: node
+bundle: social_link
+label: 'stay conected img-link3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
