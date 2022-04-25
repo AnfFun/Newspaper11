@@ -13,7 +13,7 @@ _core:
 id: bartik_account_menu
 theme: bartik
 region: secondary_menu
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
