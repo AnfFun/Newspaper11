@@ -1,0 +1,44 @@
+uuid: 25762bae-6d70-41ac-9003-1ff004bc921a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_link.body
+    - field.field.node.social_link.field_link_sidebar
+    - field.field.node.social_link.field_link_sidebar2
+    - field.field.node.social_link.field_link_sidebar3
+    - field.field.node.social_link.field_stay_conected_img_link
+    - field.field.node.social_link.field_stay_conected_img_link2
+    - field.field.node.social_link.field_stay_conected_img_link3
+    - field.field.node.social_link.layout_builder__layout
+    - node.type.social_link
+  module:
+    - text
+    - user
+id: node.social_link.teaser
+targetEntityType: node
+bundle: social_link
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_link_sidebar: true
+  field_link_sidebar2: true
+  field_link_sidebar3: true
+  field_stay_conected_img_link: true
+  field_stay_conected_img_link2: true
+  field_stay_conected_img_link3: true
+  layout_builder__layout: true

@@ -1,0 +1,22 @@
+uuid: d2ea424a-558b-49c2-b8b8-c775090c4a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stay_conected_type
+    - field.field.block_content.stay_conected_type.body
+  module:
+    - text
+id: block_content.stay_conected_type.default
+targetEntityType: block_content
+bundle: stay_conected_type
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

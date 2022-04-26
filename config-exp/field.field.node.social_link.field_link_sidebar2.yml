@@ -1,0 +1,23 @@
+uuid: 411e97af-7cb0-41cc-8ff1-77f3b5452751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_sidebar2
+    - node.type.social_link
+  module:
+    - link
+id: node.social_link.field_link_sidebar2
+field_name: field_link_sidebar2
+entity_type: node
+bundle: social_link
+label: 'Link sidebar2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

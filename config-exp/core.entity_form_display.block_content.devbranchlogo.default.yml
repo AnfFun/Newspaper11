@@ -5,21 +5,19 @@ dependencies:
   config:
     - block_content.type.devbranchlogo
     - field.field.block_content.devbranchlogo.field_branch_logo
-    - image.style.thumbnail
   module:
-    - image
+    - media_library
 id: block_content.devbranchlogo.default
 targetEntityType: block_content
 bundle: devbranchlogo
 mode: default
 content:
   field_branch_logo:
-    type: image_image
+    type: media_library_widget
     weight: 26
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   info:
     type: string_textfield
