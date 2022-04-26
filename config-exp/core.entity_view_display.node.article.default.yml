@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_tags
+    - image.style.large
     - node.type.article
   module:
     - comment
     - layout_builder
+    - media
     - text
     - user
 third_party_settings:
@@ -42,11 +44,11 @@ content:
     weight: 4
     region: content
   field_media_for_content:
-    type: entity_reference_entity_view
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: large
     third_party_settings: {  }
     weight: 0
     region: content

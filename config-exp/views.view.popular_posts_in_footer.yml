@@ -1,14 +1,14 @@
-uuid: d0017e2d-bd61-4e64-923d-4609e57c81f5
+uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.footer_view
   module:
     - node
     - user
-id: footer_popularposts_views
-label: 'Footer Popular posts views'
+id: popular_posts_in_footer
+label: 'Popular posts in footer'
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Popular Posts'
+      title: 'Popular posts in footer'
       fields:
         title:
           id: title
@@ -147,7 +147,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: footer_view
       query:
         type: views_query
         options:
@@ -170,10 +170,11 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Popular Posts'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
