@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.fashion_tab.body
+    - field.field.node.fashion_tab.field_fashpargraph
+    - field.field.node.fashion_tab.field_fashtaxo
     - node.type.fashion_tab
   module:
     - text
@@ -27,4 +29,6 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_fashpargraph: true
+  field_fashtaxo: true

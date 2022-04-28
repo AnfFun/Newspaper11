@@ -1,0 +1,29 @@
+uuid: dc06cd8d-427e-44fd-9b30-c39be0bb223d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fashtaxo
+    - node.type.fashion_tab
+    - taxonomy.vocabulary.global_tags
+id: node.fashion_tab.field_fashtaxo
+field_name: field_fashtaxo
+entity_type: node
+bundle: fashion_tab
+label: FashTaxo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      global_tags: global_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -4,10 +4,107 @@ status: true
 dependencies:
   config:
     - field.field.node.fashion_tab.body
+    - field.field.node.fashion_tab.field_fashpargraph
+    - field.field.node.fashion_tab.field_fashtaxo
     - node.type.fashion_tab
   module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f4b02e5c-00e0-4858-a802-bfbc868f9291:
+            uuid: f4b02e5c-00e0-4858-a802-bfbc868f9291
+            region: content
+            configuration:
+              id: 'extra_field_block:node:fashion_tab:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          14fe93e7-774b-4b25-b2bf-447bee4ca115:
+            uuid: 14fe93e7-774b-4b25-b2bf-447bee4ca115
+            region: content
+            configuration:
+              id: 'field_block:node:fashion_tab:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          3f782c79-a72c-4304-ba31-19662921cdaa:
+            uuid: 3f782c79-a72c-4304-ba31-19662921cdaa
+            region: content
+            configuration:
+              id: 'field_block:node:fashion_tab:field_fashtaxo'
+              label: FashTaxo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6febe7f9-aba3-47f2-9a88-70691e429079:
+            uuid: 6febe7f9-aba3-47f2-9a88-70691e429079
+            region: content
+            configuration:
+              id: 'field_block:node:fashion_tab:field_fashpargraph'
+              label: FashPargraph
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
 id: node.fashion_tab.default
 targetEntityType: node
 bundle: fashion_tab
@@ -18,11 +115,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 3
+    region: content
+  field_fashpargraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fashtaxo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true
