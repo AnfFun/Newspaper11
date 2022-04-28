@@ -1,0 +1,23 @@
+uuid: b4b3379a-27bf-4778-a883-b8d99dfcea0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.social_link
+  module:
+    - text
+id: node.social_link.body
+field_name: body
+entity_type: node
+bundle: social_link
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

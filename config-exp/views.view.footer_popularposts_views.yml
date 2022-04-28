@@ -2,11 +2,13 @@ uuid: d0017e2d-bd61-4e64-923d-4609e57c81f5
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
 id: footer_popularposts_views
-label: footer_popularposts_views
+label: 'Footer Popular posts views'
 module: views
 description: ''
 tag: ''
@@ -142,7 +144,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options:
