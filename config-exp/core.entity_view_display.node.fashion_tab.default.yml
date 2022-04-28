@@ -1,0 +1,28 @@
+uuid: e2263476-7f4b-44f9-8794-2bec5a2d52e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fashion_tab.body
+    - node.type.fashion_tab
+  module:
+    - text
+    - user
+id: node.fashion_tab.default
+targetEntityType: node
+bundle: fashion_tab
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

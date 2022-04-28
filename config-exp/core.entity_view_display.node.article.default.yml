@@ -6,19 +6,14 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
-<<<<<<< HEAD
-=======
     - field.field.node.article.field_media_for_content
->>>>>>> 4584.dev
     - field.field.node.article.field_tags
+    - image.style.large
     - node.type.article
   module:
     - comment
-<<<<<<< HEAD
-=======
     - layout_builder
     - media
->>>>>>> 4584.dev
     - text
     - user
 third_party_settings:
@@ -48,8 +43,6 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-<<<<<<< HEAD
-=======
   field_media_for_content:
     type: media_thumbnail
     label: hidden
@@ -59,7 +52,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
->>>>>>> 4584.dev
   field_tags:
     type: entity_reference_label
     label: hidden

@@ -1,0 +1,28 @@
+uuid: 9d6a8f44-0a87-409a-b6e7-7b17e7b98752
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lifestyle_tab.body
+    - node.type.lifestyle_tab
+  module:
+    - text
+    - user
+id: node.lifestyle_tab.default
+targetEntityType: node
+bundle: lifestyle_tab
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
