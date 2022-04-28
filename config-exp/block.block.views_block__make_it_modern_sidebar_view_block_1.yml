@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.make_it_modern_sidebar_view
   module:
+    - system
     - views
   theme:
     - bartik
@@ -21,4 +22,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /node/27

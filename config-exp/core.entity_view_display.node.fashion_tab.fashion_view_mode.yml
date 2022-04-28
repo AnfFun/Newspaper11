@@ -1,8 +1,9 @@
-uuid: e2263476-7f4b-44f9-8794-2bec5a2d52e8
+uuid: 886ad889-bc15-4ae3-884b-1c8e3e91f041
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.fashion_view_mode
     - field.field.node.fashion_tab.body
     - field.field.node.fashion_tab.field_fashpargraph
     - field.field.node.fashion_tab.field_fashtaxo
@@ -16,10 +17,10 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-id: node.fashion_tab.default
+id: node.fashion_tab.fashion_view_mode
 targetEntityType: node
 bundle: fashion_tab
-mode: default
+mode: fashion_view_mode
 content:
   body:
     type: text_default
