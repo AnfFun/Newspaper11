@@ -1,27 +1,17 @@
-uuid: e25e01d7-73c6-4c2e-8dfb-b7b9299238a8
+uuid: b492b15f-e2c9-4380-9a2c-3c2dd3656322
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - file
-    - image
+    - media
 id: block_content.field_branch_logo
 field_name: field_branch_logo
 entity_type: block_content
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true
