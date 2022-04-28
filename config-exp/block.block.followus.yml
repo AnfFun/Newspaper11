@@ -1,0 +1,25 @@
+uuid: 2c0e6dec-3eb6-4660-bb73-da5d5b07706a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: followus
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+settings:
+  id: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+  label: 'FOLLOW US'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

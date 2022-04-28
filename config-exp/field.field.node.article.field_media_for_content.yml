@@ -1,0 +1,29 @@
+uuid: 15135b91-e0b6-48e9-b52b-974bd5bb9f61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_for_content
+    - media.type.image
+    - node.type.article
+id: node.article.field_media_for_content
+field_name: field_media_for_content
+entity_type: node
+bundle: article
+label: 'Media for content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

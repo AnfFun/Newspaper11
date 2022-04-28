@@ -1,0 +1,10 @@
+uuid: 8147b1cb-cf77-45ed-bd58-c85864154294
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.footer_view
+label: 'Footer view'
+targetEntityType: node
+cache: true

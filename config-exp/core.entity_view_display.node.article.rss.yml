@@ -6,6 +6,10 @@ dependencies:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
     - field.field.node.article.comment
+<<<<<<< HEAD
+=======
+    - field.field.node.article.field_media_for_content
+>>>>>>> 4584.dev
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -23,4 +27,8 @@ content:
 hidden:
   body: true
   comment: true
+<<<<<<< HEAD
+=======
+  field_media_for_content: true
+>>>>>>> 4584.dev
   field_tags: true

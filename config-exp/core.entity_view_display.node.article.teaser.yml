@@ -6,9 +6,18 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+<<<<<<< HEAD
     - field.field.node.article.field_tags
     - node.type.article
   module:
+=======
+    - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - media
+>>>>>>> 4584.dev
     - text
     - user
 _core:
@@ -24,20 +33,36 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
+<<<<<<< HEAD
+=======
+  field_media_for_content:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
     weight: 0
     region: content
+>>>>>>> 4584.dev
   field_tags:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
+<<<<<<< HEAD
     weight: 100
+=======
+    weight: 3
+>>>>>>> 4584.dev
     region: content
 hidden:
   comment: true
