@@ -1,22 +1,22 @@
-uuid: 8fc5e377-896d-4d33-91eb-99dfdbb1de65
+uuid: b2a5fd0c-b513-447a-ae99-62b007db84a3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.stay_conected_view
+    - views.view.must_read
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__stay_conected_view_block_1
+id: views_block__must_read_block_1
 theme: bartik
 region: sidebar_second
-weight: -8
+weight: 0
 provider: null
-plugin: 'views_block:stay_conected_view-block_1'
+plugin: 'views_block:must_read-block_1'
 settings:
-  id: 'views_block:stay_conected_view-block_1'
+  id: 'views_block:must_read-block_1'
   label: ''
   label_display: visible
   provider: views
@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
-    pages: "/node/27\r\n/node/28\r\n"
+    negate: false
+    pages: /node/27

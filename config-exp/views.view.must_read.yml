@@ -1,21 +1,18 @@
-uuid: 33dcd339-10df-481a-b4ef-03cb8d0c365f
+uuid: 12fc17f7-8264-4018-85d1-50dc755623cb
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.fashion_view_mode
+    - core.entity_view_mode.node.title_authored_by_on
     - taxonomy.vocabulary.global_tags
   content:
-    - 'taxonomy_term:global_tags:6156ba4f-11d8-4207-8b05-f3dffac02683'
-    - 'taxonomy_term:global_tags:a01137cc-6c9c-4cf0-8bc9-1dbaec5159c2'
-    - 'taxonomy_term:global_tags:e121340e-d5f2-48c4-af20-e8354993b705'
-    - 'taxonomy_term:global_tags:fc237213-a5a7-4d4a-bfea-d4b205374a66'
+    - 'taxonomy_term:global_tags:3480a69c-ef14-4852-a12d-f11b6c2772da'
   module:
     - node
     - taxonomy
     - user
-id: latest_news_fashion_
-label: 'Latest news(Fashion)'
+id: must_read
+label: 'Must read'
 module: views
 description: ''
 tag: ''
@@ -28,6 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 'Must read'
       fields:
         title:
           id: title
@@ -80,12 +78,12 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 5
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Next ›'
+            previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
           expose:
@@ -157,10 +155,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 16
-            - 15
-            - 2
-            - 3
+            - 28
           group: 1
           exposed: false
           expose:
@@ -190,28 +185,26 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
+          reduce_duplicates: false
           vid: global_tags
           type: textfield
           hierarchy: false
           limit: true
           error_message: true
       style:
-        type: grid
+        type: html_list
         options:
+          row_class: ''
+          default_row_class: true
           uses_fields: false
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: fashion_view_mode
+          view_mode: title_authored_by_on
       query:
         type: views_query
         options:
@@ -236,11 +229,10 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: 'Latest news'
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
-      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
