@@ -1,0 +1,47 @@
+uuid: fbf6eefd-e233-4135-8e8f-1a70d45e108a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.taxonomy_block
+    - field.field.block_content.taxonomy_block.field_taxonomy_block
+    - field.field.block_content.taxonomy_block.field_text_for_block_taxonomy
+    - field.field.block_content.taxonomy_block.field_title_in_fashion_tabs
+  module:
+    - text
+id: block_content.taxonomy_block.default
+targetEntityType: block_content
+bundle: taxonomy_block
+mode: default
+content:
+  field_taxonomy_block:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_text_for_block_taxonomy:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_in_fashion_tabs:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

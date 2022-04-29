@@ -1,0 +1,21 @@
+uuid: a55375b2-2430-4954-b6cb-78e04e2a0384
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.taxonomy_block
+    - field.storage.block_content.field_text_for_block_taxonomy
+  module:
+    - text
+id: block_content.taxonomy_block.field_text_for_block_taxonomy
+field_name: field_text_for_block_taxonomy
+entity_type: block_content
+bundle: taxonomy_block
+label: 'text for block-taxonomy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
