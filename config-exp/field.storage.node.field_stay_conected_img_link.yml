@@ -1,9 +1,4 @@
 uuid: dc0ac352-9adf-41b5-b27a-cd99d037006e
-<<<<<<< HEAD
-=======
-
-uuid: 455ec3d4-7846-4d0b-9c91-2f84e6a488c8
->>>>>>> main
 langcode: en
 status: true
 dependencies:
@@ -12,12 +7,6 @@ dependencies:
     - node
 id: node.field_stay_conected_img_link
 field_name: field_stay_conected_img_link
-<<<<<<< HEAD
-=======
-
-id: node.field_media_for_content
-field_name: field_media_for_content
->>>>>>> main
 entity_type: node
 type: entity_reference
 settings:
