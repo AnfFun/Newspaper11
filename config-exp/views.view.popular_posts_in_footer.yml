@@ -1,8 +1,18 @@
-uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
+ uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
 langcode: en
 status: true
 dependencies:
   config:
+<<<<<<< HEAD
+=======
+    - core.entity_view_mode.node.teaser
+  module:
+    - node
+    - user
+id: footer_popularposts_views
+label: 'Footer Popular posts views'
+
+>>>>>>> main
     - core.entity_view_mode.node.footer_view
   module:
     - node
@@ -147,6 +157,11 @@ display:
         type: 'entity:node'
         options:
           relationship: none
+<<<<<<< HEAD
+=======
+          view_mode: teaser
+
+>>>>>>> main
           view_mode: footer_view
       query:
         type: views_query
