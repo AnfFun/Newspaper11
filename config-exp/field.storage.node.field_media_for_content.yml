@@ -1,21 +1,16 @@
-<<<<<<<< HEAD:config-exp/field.storage.node.field_stay_conected_img_link.yml
 uuid: dc0ac352-9adf-41b5-b27a-cd99d037006e
-========
 uuid: 455ec3d4-7846-4d0b-9c91-2f84e6a488c8
->>>>>>>> 4584.dev:config-exp/field.storage.node.field_media_for_content.yml
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
-<<<<<<<< HEAD:config-exp/field.storage.node.field_stay_conected_img_link.yml
 id: node.field_stay_conected_img_link
 field_name: field_stay_conected_img_link
-========
+ 
 id: node.field_media_for_content
 field_name: field_media_for_content
->>>>>>>> 4584.dev:config-exp/field.storage.node.field_media_for_content.yml
 entity_type: node
 type: entity_reference
 settings:

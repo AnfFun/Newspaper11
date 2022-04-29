@@ -1,23 +1,21 @@
-uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
+ uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
 langcode: en
 status: true
 dependencies:
   config:
-<<<<<<< HEAD:config-exp/views.view.footer_popularposts_views.yml
     - core.entity_view_mode.node.teaser
   module:
     - node
     - user
 id: footer_popularposts_views
 label: 'Footer Popular posts views'
-=======
+
     - core.entity_view_mode.node.footer_view
   module:
     - node
     - user
 id: popular_posts_in_footer
 label: 'Popular posts in footer'
->>>>>>> 4584.dev:config-exp/views.view.popular_posts_in_footer.yml
 module: views
 description: ''
 tag: ''
@@ -156,11 +154,9 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-<<<<<<< HEAD:config-exp/views.view.footer_popularposts_views.yml
           view_mode: teaser
-=======
+
           view_mode: footer_view
->>>>>>> 4584.dev:config-exp/views.view.popular_posts_in_footer.yml
       query:
         type: views_query
         options:
