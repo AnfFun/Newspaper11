@@ -1,0 +1,30 @@
+uuid: e751435a-2e81-496c-8f81-d2ed67b9d6da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lifestyle_tab.body
+    - node.type.lifestyle_tab
+  module:
+    - text
+    - user
+id: node.lifestyle_tab.teaser
+targetEntityType: node
+bundle: lifestyle_tab
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

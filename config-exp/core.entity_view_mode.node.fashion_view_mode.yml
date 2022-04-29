@@ -1,0 +1,10 @@
+uuid: ff441aff-32a9-423a-86d0-605d5e297afc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.fashion_view_mode
+label: 'Fashion view mode'
+targetEntityType: node
+cache: true

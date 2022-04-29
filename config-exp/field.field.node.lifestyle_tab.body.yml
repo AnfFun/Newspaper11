@@ -1,0 +1,23 @@
+uuid: 407382c9-14ef-4755-92f5-b28960a42e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lifestyle_tab
+  module:
+    - text
+id: node.lifestyle_tab.body
+field_name: body
+entity_type: node
+bundle: lifestyle_tab
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

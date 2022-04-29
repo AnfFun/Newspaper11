@@ -1,0 +1,31 @@
+uuid: c30e006a-8635-4a82-b0fa-e23283cdbf83
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.taxonomy_block
+    - field.storage.block_content.field_taxonomy_block
+    - taxonomy.vocabulary.global_tags
+    - taxonomy.vocabulary.maintax
+id: block_content.taxonomy_block.field_taxonomy_block
+field_name: field_taxonomy_block
+entity_type: block_content
+bundle: taxonomy_block
+label: taxonomy-block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      maintax: maintax
+      global_tags: global_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: maintax
+field_type: entity_reference

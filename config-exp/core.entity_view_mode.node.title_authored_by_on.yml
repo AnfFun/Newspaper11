@@ -1,0 +1,10 @@
+uuid: 2c30a628-0419-4cc2-b0f4-dab67ce54786
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.title_authored_by_on
+label: 'Title+Authored by/on'
+targetEntityType: node
+cache: true

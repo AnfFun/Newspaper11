@@ -1,24 +1,21 @@
- uuid: a0d4a64f-5b72-4742-a775-8e39f682b2b2
+uuid: 33dcd339-10df-481a-b4ef-03cb8d0c365f
 langcode: en
 status: true
 dependencies:
   config:
-<<<<<<< HEAD
-=======
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.fashion_view_mode
+    - taxonomy.vocabulary.global_tags
+  content:
+    - 'taxonomy_term:global_tags:6156ba4f-11d8-4207-8b05-f3dffac02683'
+    - 'taxonomy_term:global_tags:a01137cc-6c9c-4cf0-8bc9-1dbaec5159c2'
+    - 'taxonomy_term:global_tags:e121340e-d5f2-48c4-af20-e8354993b705'
+    - 'taxonomy_term:global_tags:fc237213-a5a7-4d4a-bfea-d4b205374a66'
   module:
     - node
+    - taxonomy
     - user
-id: footer_popularposts_views
-label: 'Footer Popular posts views'
-
->>>>>>> main
-    - core.entity_view_mode.node.footer_view
-  module:
-    - node
-    - user
-id: popular_posts_in_footer
-label: 'Popular posts in footer'
+id: latest_news_fashion_
+label: 'Latest news(Fashion)'
 module: views
 description: ''
 tag: ''
@@ -31,7 +28,6 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Popular posts in footer'
       fields:
         title:
           id: title
@@ -40,35 +36,19 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -97,10 +77,26 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: full
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -151,18 +147,71 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 16
+            - 15
+            - 2
+            - 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: global_tags
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
-        type: default
+        type: grid
+        options:
+          uses_fields: false
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: 'entity:node'
         options:
           relationship: none
-<<<<<<< HEAD
-=======
-          view_mode: teaser
-
->>>>>>> main
-          view_mode: footer_view
+          view_mode: fashion_view_mode
       query:
         type: views_query
         options:
@@ -180,12 +229,14 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
   block_1:
     id: block_1
-    display_title: 'Popular Posts'
+    display_title: 'Latest news'
     display_plugin: block
     position: 1
     display_options:
@@ -196,6 +247,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

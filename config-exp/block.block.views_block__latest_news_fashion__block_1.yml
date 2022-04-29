@@ -1,0 +1,29 @@
+uuid: 49837c7e-d658-418e-81ae-0b7cce094f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news_fashion_
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__latest_news_fashion__block_1
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:latest_news_fashion_-block_1'
+settings:
+  id: 'views_block:latest_news_fashion_-block_1'
+  label: 'LATEST NEWS'
+  label_display: visible
+  provider: views
+  views_label: 'LATEST NEWS'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/27

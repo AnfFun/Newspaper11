@@ -1,0 +1,158 @@
+uuid: d5e87b62-6e4a-405e-af3e-f6f3020164ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.fashion_view_mode
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - comment
+    - layout_builder
+    - layout_discovery
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          83a7082a-9d59-49bd-945b-e59822b38632:
+            uuid: 83a7082a-9d59-49bd-945b-e59822b38632
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_media_for_content'
+              label: 'Media for content'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4ebb7789-a2b0-44cb-900d-5ba61f7bd281:
+            uuid: 4ebb7789-a2b0-44cb-900d-5ba61f7bd281
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3665254e-4153-4886-8c82-eed23bba81a3:
+            uuid: 3665254e-4153-4886-8c82-eed23bba81a3
+            region: content
+            configuration:
+              id: 'field_block:node:article:uid'
+              label: 'Authored by'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0354a165-2135-4c43-afe2-d86f912ee923:
+            uuid: 0354a165-2135-4c43-afe2-d86f912ee923
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: above
+                settings:
+                  date_format: custom
+                  custom_date_format: 'F j, o'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
+id: node.article.fashion_view_mode
+targetEntityType: node
+bundle: article
+mode: fashion_view_mode
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_media_for_content:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  layout_builder__layout: true

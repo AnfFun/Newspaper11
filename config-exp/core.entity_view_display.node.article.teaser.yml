@@ -6,9 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+<<<<<<< HEAD
+=======
     - field.field.node.article.field_tags
     - node.type.article
   module:
+>>>>>>> main
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_tags
     - image.style.large
@@ -52,7 +55,10 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
+<<<<<<< HEAD
+=======
     weight: 100
+>>>>>>> main
     weight: 3
     region: content
 hidden:

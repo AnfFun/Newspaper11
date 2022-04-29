@@ -1,0 +1,30 @@
+uuid: 552910b7-6f40-4c3f-b419-6fe6f12cce75
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_tab.body
+    - node.type.video_tab
+  module:
+    - text
+    - user
+id: node.video_tab.teaser
+targetEntityType: node
+bundle: video_tab
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

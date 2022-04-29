@@ -1,0 +1,21 @@
+uuid: 289135c5-1b2b-4edc-8567-b4ce2aa7ba96
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.taxonomy_block
+    - field.storage.block_content.field_title_in_fashion_tabs
+  module:
+    - text
+id: block_content.taxonomy_block.field_title_in_fashion_tabs
+field_name: field_title_in_fashion_tabs
+entity_type: block_content
+bundle: taxonomy_block
+label: 'Title in fashion tabs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
