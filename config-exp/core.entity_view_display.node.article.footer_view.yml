@@ -6,7 +6,9 @@ dependencies:
     - core.entity_view_mode.node.footer_view
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_paragraph_for_article
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -106,5 +108,7 @@ content:
 hidden:
   body: true
   comment: true
+  field_description_text: true
+  field_paragraph_for_article: true
   field_tags: true
   links: true

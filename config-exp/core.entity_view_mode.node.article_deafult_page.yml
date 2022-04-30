@@ -1,0 +1,10 @@
+uuid: d8ebf83b-1293-4a4d-a675-97488e796fdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.article_deafult_page
+label: 'Article deafult page'
+targetEntityType: node
+cache: true
