@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a6068ca4d4b6336f7a248b77f231e40",
+    "content-hash": "73fb9dcbedd29ae9c582c4b59519cc2c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1110,6 +1110,54 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/flippy",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/flippy.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flippy-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "09e93746f7e7805e884c16add6cbeedcea8fdf8c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1594746345",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "rli",
+                    "homepage": "https://www.drupal.org/user/633216"
+                }
+            ],
+            "description": "Allows administrators to define custom pagers for navigation in lists of nodes.",
+            "homepage": "https://www.drupal.org/project/flippy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/flippy"
             }
         },
         {
@@ -4987,7 +5035,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/flippy": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
