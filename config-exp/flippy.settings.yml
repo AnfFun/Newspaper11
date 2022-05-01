@@ -1,0 +1,17 @@
+flippy_article: 1
+flippy_head_article: 0
+flippy_show_empty_article: 0
+flippy_prev_label_article: 'PREVIOUS ARTICLE'
+flippy_next_label_article: 'NEXT ARTICLE'
+flippy_first_last_article: 0
+flippy_first_label_article: ''
+flippy_last_label_article: ''
+flippy_loop_article: 0
+flippy_random_article: 0
+flippy_random_label_article: ''
+flippy_truncate_article: ''
+flippy_ellipse_article: ''
+flippy_press_swipe_article: null
+flippy_custom_sorting_article: 0
+flippy_sort_article: nid
+flippy_order_article: ASC

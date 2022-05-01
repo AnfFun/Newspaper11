@@ -9,7 +9,7 @@ dependencies:
 id: breadcrumbs
 theme: bartik
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:
