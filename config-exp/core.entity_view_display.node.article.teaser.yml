@@ -14,9 +14,14 @@ dependencies:
     - image.style.large
     - node.type.article
   module:
+    - layout_builder
     - media
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: 0ur5-yZyR8pJ3lugC_Micbr6V_tpMWz-yHFhtuLcZo8
 id: node.article.teaser

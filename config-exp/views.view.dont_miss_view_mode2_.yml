@@ -1,15 +1,14 @@
-uuid: e0179766-edbc-4200-b748-e9847f0ad6b0
+uuid: 70ee9904-954d-4253-92b6-8bc0846e4a61
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.don
-    - node.type.article
+    - core.entity_view_mode.node.footer_view
   module:
     - node
     - user
-id: dont_miss
-label: 'Dont miss'
+id: dont_miss_view_mode2_
+label: 'Dont miss(view-mode2)'
 module: views
 description: ''
 tag: ''
@@ -22,6 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 'Editor picks'
       fields:
         title:
           id: title
@@ -74,7 +74,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 4
       exposed_form:
         type: basic
         options:
@@ -93,23 +93,7 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
+      sorts: {  }
       arguments: {  }
       filters:
         status:
@@ -125,21 +109,10 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            article: article
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
       style:
         type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: true
           uses_fields: false
@@ -147,7 +120,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: don
+          view_mode: footer_view
       query:
         type: views_query
         options:
@@ -170,10 +143,11 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Dont miss(2)'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
