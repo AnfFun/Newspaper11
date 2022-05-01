@@ -1,0 +1,10 @@
+uuid: 6238af56-d6d9-4cf2-b524-d20d60ccbb6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.don
+label: 'Dont miss'
+targetEntityType: node
+cache: true
