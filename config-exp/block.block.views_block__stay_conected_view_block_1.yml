@@ -12,7 +12,7 @@ dependencies:
 id: views_block__stay_conected_view_block_1
 theme: bartik
 region: sidebar_second
-weight: -8
+weight: -12
 provider: null
 plugin: 'views_block:stay_conected_view-block_1'
 settings:
@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
-    pages: "/node/27\r\n/node/28\r\n"
+    negate: false
+    pages: "/node\r\n"

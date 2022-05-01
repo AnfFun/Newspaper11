@@ -1,0 +1,28 @@
+uuid: 202a2cf1-b305-4a08-867d-12ab43dfc1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.frontpage.body
+    - node.type.frontpage
+  module:
+    - text
+    - user
+id: node.frontpage.default
+targetEntityType: node
+bundle: frontpage
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

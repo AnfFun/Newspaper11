@@ -6,8 +6,11 @@ dependencies:
     - core.entity_view_mode.node.footer_view
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_paragraph_for_article
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.thumbnail
     - node.type.article
   module:
@@ -86,6 +89,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          8c29804f-a71c-441a-afee-9d22adc92e44:
+            uuid: 8c29804f-a71c-441a-afee-9d22adc92e44
+            region: first
+            configuration:
+              id: 'extra_field_block:node:article:flippy_pager'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
@@ -103,8 +116,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  flippy_pager:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: first
 hidden:
   body: true
   comment: true
+  field_description_text: true
+  field_paragraph_for_article: true
   field_tags: true
+  layout_builder__layout: true
   links: true

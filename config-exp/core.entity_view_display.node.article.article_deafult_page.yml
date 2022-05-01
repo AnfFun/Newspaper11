@@ -1,9 +1,10 @@
-uuid: d56c3c01-39b6-4a23-8395-627d3b64622d
+uuid: 95f3babe-2d01-43d8-bb23-485d3cdf5b37
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.article_deafult_page
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_description_text
@@ -14,23 +15,56 @@ dependencies:
     - image.style.large
     - node.type.article
   module:
+    - comment
+    - layout_builder
+    - layout_discovery
     - media
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          aba3280c-142a-42fc-af3d-07aaca144fd2:
+            uuid: aba3280c-142a-42fc-af3d-07aaca144fd2
+            region: content
+            configuration:
+              id: 'extra_field_block:node:article:flippy_pager'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
-  default_config_hash: 0ur5-yZyR8pJ3lugC_Micbr6V_tpMWz-yHFhtuLcZo8
-id: node.article.teaser
+  default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
+id: node.article.article_deafult_page
 targetEntityType: node
 bundle: article
-mode: teaser
+mode: article_deafult_page
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_media_for_content:
     type: media_thumbnail
@@ -43,7 +77,7 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -60,7 +94,6 @@ content:
     weight: 3
     region: content
 hidden:
-  comment: true
   field_description_text: true
   field_paragraph_for_article: true
   layout_builder__layout: true

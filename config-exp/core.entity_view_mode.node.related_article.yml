@@ -1,0 +1,10 @@
+uuid: 73295a92-1e90-4260-b5aa-5752aa17b7aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_article
+label: 'Related article'
+targetEntityType: node
+cache: true

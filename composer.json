@@ -20,6 +20,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/flippy": "^1.0@beta",
         "drupal/paragraphs": "^1.13",
         "drupal/quickedit-quickedit": "^1.0",
         "drupal/social_media_links": "^2.8"

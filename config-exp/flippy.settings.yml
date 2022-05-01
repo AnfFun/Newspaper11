@@ -1,0 +1,34 @@
+flippy_article: 1
+flippy_head_article: 0
+flippy_show_empty_article: 0
+flippy_prev_label_article: 'PREVIOUS ARTICLE'
+flippy_next_label_article: 'NEXT ARTICLE'
+flippy_first_last_article: 0
+flippy_first_label_article: ''
+flippy_last_label_article: ''
+flippy_loop_article: 0
+flippy_random_article: 0
+flippy_random_label_article: ''
+flippy_truncate_article: ''
+flippy_ellipse_article: ''
+flippy_press_swipe_article: null
+flippy_custom_sorting_article: 0
+flippy_sort_article: nid
+flippy_order_article: ASC
+flippy_frontpage: 0
+flippy_head_frontpage: 0
+flippy_show_empty_frontpage: 0
+flippy_prev_label_frontpage: ''
+flippy_next_label_frontpage: ''
+flippy_first_last_frontpage: 0
+flippy_first_label_frontpage: ''
+flippy_last_label_frontpage: ''
+flippy_loop_frontpage: 0
+flippy_random_frontpage: 0
+flippy_random_label_frontpage: ''
+flippy_truncate_frontpage: ''
+flippy_ellipse_frontpage: ''
+flippy_press_swipe_frontpage: null
+flippy_custom_sorting_frontpage: 0
+flippy_sort_frontpage: nid
+flippy_order_frontpage: ASC
