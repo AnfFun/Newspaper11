@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.big_picture_down_tex
     - node.type.article
+    - taxonomy.vocabulary.maintax
+  content:
+    - 'taxonomy_term:maintax:b4e9d732-8041-4527-ab41-06c031561eac'
   module:
     - node
+    - taxonomy
     - user
 id: lifestyle_news_top_
 label: 'Lifestyle news(top)'
@@ -249,6 +253,52 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 25
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: maintax
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: grid
         options:
@@ -282,6 +332,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -297,6 +348,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

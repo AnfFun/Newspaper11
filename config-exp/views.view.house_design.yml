@@ -7,6 +7,7 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.global_tags
   content:
+    - 'taxonomy_term:global_tags:3480a69c-ef14-4852-a12d-f11b6c2772da'
     - 'taxonomy_term:global_tags:8017584b-40d2-42e9-aebf-79b8603ecb77'
   module:
     - node
@@ -179,9 +180,10 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: or
+          operator: and
           value:
             - 29
+            - 28
           group: 1
           exposed: false
           expose:
