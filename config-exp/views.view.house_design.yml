@@ -1,15 +1,19 @@
-uuid: e0179766-edbc-4200-b748-e9847f0ad6b0
+uuid: dfd9efa1-23bc-4c47-8082-c08b15e96280
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.don
+    - core.entity_view_mode.node.house_design
     - node.type.article
+    - taxonomy.vocabulary.global_tags
+  content:
+    - 'taxonomy_term:global_tags:8017584b-40d2-42e9-aebf-79b8603ecb77'
   module:
     - node
+    - taxonomy
     - user
-id: dont_miss
-label: 'Dont miss'
+id: house_design
+label: 'House design'
 module: views
 description: ''
 tag: ''
@@ -22,6 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 'House design'
       fields:
         title:
           id: title
@@ -30,19 +35,35 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
-            word_boundary: false
-            ellipsis: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -74,7 +95,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 3
           total_pages: null
           id: 0
           tags:
@@ -150,17 +171,68 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 29
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: global_tags
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
-        type: default
+        type: grid
         options:
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: don
+          view_mode: house_design
       query:
         type: views_query
         options:
@@ -179,6 +251,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -195,6 +268,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

@@ -1,26 +1,26 @@
-uuid: 9372038b-9d19-4296-9603-cc036333269c
+uuid: 65eab3b6-1d54-4b31-8cf7-1ecde03fbc0e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.house_design
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__lifestyle_news_block_1
+id: views_block__house_design_block_1
 theme: bartik
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'views_block:lifestyle_news-block_1'
+plugin: 'views_block:house_design-block_1'
 settings:
-  id: 'views_block:lifestyle_news-block_1'
-  label: ''
+  id: 'views_block:house_design-block_1'
+  label: 'HOUSE DESIGN'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'HOUSE DESIGN'
   items_per_page: none
 visibility:
   request_path:

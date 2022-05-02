@@ -1,0 +1,10 @@
+uuid: d8dadb76-d63b-4154-a7d6-3cacdc64e9f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.house_design
+label: 'House design'
+targetEntityType: node
+cache: true
