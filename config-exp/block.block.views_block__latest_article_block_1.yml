@@ -1,26 +1,26 @@
-uuid: 5a447a15-2f14-4a6a-a15f-a5b52195771f
+uuid: 5e639e0d-811d-4a7b-a0d6-df8dd3790d40
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.perfomance_training
+    - views.view.latest_article
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__perfomance_training_block_1
+id: views_block__latest_article_block_1
 theme: bartik
 region: content
-weight: -4
+weight: -3
 provider: null
-plugin: 'views_block:perfomance_training-block_1'
+plugin: 'views_block:latest_article-block_1'
 settings:
-  id: 'views_block:perfomance_training-block_1'
-  label: 'PERFOMANCE TRAINING'
+  id: 'views_block:latest_article-block_1'
+  label: 'LATEST ARTICLE'
   label_display: visible
   provider: views
-  views_label: 'PERFOMANCE TRAINING'
+  views_label: 'LATEST ARTICLE'
   items_per_page: none
 visibility:
   request_path:

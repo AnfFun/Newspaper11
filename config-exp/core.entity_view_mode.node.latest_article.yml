@@ -1,0 +1,10 @@
+uuid: 9d416b65-413e-4506-86dc-714e11a033e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.latest_article
+label: 'Latest article'
+targetEntityType: node
+cache: true
