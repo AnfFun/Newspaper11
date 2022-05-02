@@ -1,0 +1,29 @@
+uuid: 5a447a15-2f14-4a6a-a15f-a5b52195771f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.perfomance_training
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__perfomance_training_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:perfomance_training-block_1'
+settings:
+  id: 'views_block:perfomance_training-block_1'
+  label: 'PERFOMANCE TRAINING'
+  label_display: visible
+  provider: views
+  views_label: 'PERFOMANCE TRAINING'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

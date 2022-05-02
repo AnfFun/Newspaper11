@@ -1,0 +1,10 @@
+uuid: 7a5ae3b8-22f8-4f8a-9bcc-8d61c12388f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.perfomance_training_article_
+label: 'Perfomance training(Article)'
+targetEntityType: node
+cache: true
