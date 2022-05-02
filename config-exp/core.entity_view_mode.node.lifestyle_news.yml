@@ -1,0 +1,10 @@
+uuid: cdae33ce-0e77-4102-bc03-311d5d3678fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.lifestyle_news
+label: 'Lifestyle news'
+targetEntityType: node
+cache: true

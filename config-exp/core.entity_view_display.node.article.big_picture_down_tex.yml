@@ -71,25 +71,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          94bf71b3-6914-4d62-aa7d-a353ab94177d:
-            uuid: 94bf71b3-6914-4d62-aa7d-a353ab94177d
-            region: content
-            configuration:
-              id: 'field_block:node:article:field_tags'
-              label: Tags
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
           f5c5a22e-5df8-4b9d-bba7-7bfe86a33efd:
             uuid: f5c5a22e-5df8-4b9d-bba7-7bfe86a33efd
             region: content

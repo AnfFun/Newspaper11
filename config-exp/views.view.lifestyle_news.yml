@@ -1,15 +1,15 @@
-uuid: c472f5d2-5a5f-4a17-ac20-a989a6c74ff2
+uuid: acc172d9-1c2b-4ed5-a194-d61512119f3f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.big_picture_down_tex
+    - core.entity_view_mode.node.lifestyle_news
     - node.type.article
   module:
     - node
     - user
-id: dont_miss_view_mode1_
-label: 'Dont miss(view-mode1)'
+id: lifestyle_news
+label: 'Lifestyle news'
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Dont miss(view-mode1)'
+      title: 'LIFESTYLE NEWS'
       fields:
         title:
           id: title
@@ -31,35 +31,19 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -88,10 +72,23 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: mini
         options:
           offset: 0
           items_per_page: 1
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -156,11 +153,16 @@ display:
             operator_list: {  }
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: big_picture_down_tex
+          view_mode: lifestyle_news
       query:
         type: views_query
         options:
@@ -178,6 +180,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -193,6 +196,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
