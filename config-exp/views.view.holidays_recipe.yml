@@ -1,17 +1,40 @@
-uuid: f180b933-b73f-4d6f-afdc-bf15a5601349
+uuid: fdc68691-a689-4a9e-8ade-478d3a2c55eb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.holidays_recipe
+    - node.type.article
     - taxonomy.vocabulary.global_tags
+    - taxonomy.vocabulary.maintax
   content:
+    - 'taxonomy_term:global_tags:09007514-1229-4aa6-a11c-8a1d9afdf587'
+    - 'taxonomy_term:global_tags:212425b3-ea7b-4a1e-b4a2-4ad0dd52d2f4'
+    - 'taxonomy_term:global_tags:22238dc8-812f-4de6-94b8-5d9cf2dcf451'
+    - 'taxonomy_term:global_tags:25e346c9-921b-4016-bdac-abacf2e3c5ec'
+    - 'taxonomy_term:global_tags:2f50ee70-ef18-476f-9ac8-e9818b846d6d'
+    - 'taxonomy_term:global_tags:3480a69c-ef14-4852-a12d-f11b6c2772da'
+    - 'taxonomy_term:global_tags:38ddbf5b-7558-4bf8-90a5-6cbaa263dbb0'
+    - 'taxonomy_term:global_tags:6156ba4f-11d8-4207-8b05-f3dffac02683'
+    - 'taxonomy_term:global_tags:8017584b-40d2-42e9-aebf-79b8603ecb77'
+    - 'taxonomy_term:global_tags:814f1273-2628-4543-a4b2-59d1696b4f13'
+    - 'taxonomy_term:global_tags:92c6d348-53d3-430b-8966-17a59ee87cb2'
+    - 'taxonomy_term:global_tags:9d1c7a0e-5071-4b7d-a553-2b1ab6d2967e'
+    - 'taxonomy_term:global_tags:a01137cc-6c9c-4cf0-8bc9-1dbaec5159c2'
+    - 'taxonomy_term:global_tags:a55a13d3-b1be-44ae-85dd-5c3d68fb1754'
+    - 'taxonomy_term:global_tags:cb6a7f42-fe4b-415c-9cb7-99c7437c7644'
+    - 'taxonomy_term:global_tags:cf6456ea-c049-46cd-ae73-64147641d350'
+    - 'taxonomy_term:global_tags:e121340e-d5f2-48c4-af20-e8354993b705'
     - 'taxonomy_term:global_tags:efd6f170-4e9f-4528-868d-acf417610bda'
+    - 'taxonomy_term:global_tags:f4e40651-2029-4924-a247-05559775a34d'
+    - 'taxonomy_term:global_tags:fc237213-a5a7-4d4a-bfea-d4b205374a66'
+    - 'taxonomy_term:maintax:b4e9d732-8041-4527-ab41-06c031561eac'
   module:
     - node
     - taxonomy
     - user
-id: make_it_modern_sidebar_view
-label: 'Make it modern Sidebar view'
+id: holidays_recipe
+label: 'Holidays Recipe'
 module: views
 description: ''
 tag: ''
@@ -24,7 +47,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Make it modern'
+      title: 'Holidays Recipe'
       fields:
         title:
           id: title
@@ -90,15 +113,17 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 1
           total_pages: null
           id: 0
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -107,6 +132,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -138,8 +164,8 @@ display:
           plugin_id: date
           order: DESC
           expose:
-            label: 'Authored on'
-            field_identifier: created
+            label: ''
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments: {  }
@@ -157,6 +183,18 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            article: article
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         tid:
           id: tid
           table: taxonomy_index
@@ -167,7 +205,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 11
+            13: 13
           group: 1
           exposed: false
           expose:
@@ -199,18 +237,127 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: global_tags
-          type: textfield
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            25: 25
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: maintax
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            29: 29
+            17: 17
+            12: 12
+            28: 28
+            4: 4
+            31: 31
+            11: 11
+            9: 9
+            14: 14
+            16: 16
+            10: 10
+            7: 7
+            8: 8
+            30: 30
+            15: 15
+            2: 2
+            19: 19
+            5: 5
+            3: 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: global_tags
+          type: select
           hierarchy: false
           limit: true
           error_message: true
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: holidays_recipe
       query:
         type: views_query
         options:
