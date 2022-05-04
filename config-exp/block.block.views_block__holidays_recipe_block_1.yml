@@ -1,0 +1,29 @@
+uuid: be3168c2-a8d4-45c5-a0d3-6d3870771e19
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.holidays_recipe
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__holidays_recipe_block_1
+theme: bartik
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:holidays_recipe-block_1'
+settings:
+  id: 'views_block:holidays_recipe-block_1'
+  label: 'HOLIDAYS RECIPIES'
+  label_display: visible
+  provider: views
+  views_label: 'HOLIDAYS RECIPIES'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

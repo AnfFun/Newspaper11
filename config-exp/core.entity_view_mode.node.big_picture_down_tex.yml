@@ -1,0 +1,10 @@
+uuid: ca2441fb-5147-49aa-8b32-87d305cef617
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.big_picture_down_tex
+label: 'Big picture+down text'
+targetEntityType: node
+cache: true

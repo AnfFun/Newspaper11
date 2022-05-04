@@ -1,0 +1,29 @@
+uuid: a2d3c8e1-7e7d-4f3f-8779-e4934097ecb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.dont_miss
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__dont_miss_block_1
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:dont_miss-block_1'
+settings:
+  id: 'views_block:dont_miss-block_1'
+  label: 'DON''T MISS'
+  label_display: visible
+  provider: views
+  views_label: 'DON''T MISS'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,10 @@
+uuid: ad0842c1-e40e-44fb-a585-f1f8807da6cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.holidays_recipe
+label: 'Holidays Recipe'
+targetEntityType: node
+cache: true

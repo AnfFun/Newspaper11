@@ -45,7 +45,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: content
-                  image_style: large
+                  image_style: thumbnail
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -89,8 +89,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          8c29804f-a71c-441a-afee-9d22adc92e44:
-            uuid: 8c29804f-a71c-441a-afee-9d22adc92e44
+          cd43d0de-0328-4ecf-8f53-c719ce80840d:
+            uuid: cd43d0de-0328-4ecf-8f53-c719ce80840d
             region: first
             configuration:
               id: 'extra_field_block:node:article:flippy_pager'

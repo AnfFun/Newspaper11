@@ -1,0 +1,10 @@
+uuid: 5f53ed73-0938-41ea-bbca-8fadbd12a288
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.trending_now
+label: 'Trending now'
+targetEntityType: node
+cache: true

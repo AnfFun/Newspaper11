@@ -11,7 +11,7 @@ _core:
 id: bartik_breadcrumbs
 theme: bartik
 region: breadcrumb
-weight: -12
+weight: -11
 provider: null
 plugin: system_breadcrumb_block
 settings:
