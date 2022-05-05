@@ -1,17 +1,11 @@
 name: Newspaper
 type: theme
-base theme: false
-description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
-package: Core
-version: VERSION
+base theme: bartik
+description: 'Custom themes for Newspaper11'
+version: 1.x
+core_version_requirement: ^8 || ^9
 libraries:
-
-ckeditor_stylesheets:
-  - css/base/elements.css
-  - css/components/captions.css
-  - css/components/table.css
-  - css/components/text-formatted.css
-  - css/classy/components/media-embed-error.css
+  - newspaper11/global-styling
 regions:
   header: Header
   primary_menu: 'Primary menu'
