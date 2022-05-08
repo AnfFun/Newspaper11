@@ -51,3 +51,4 @@
 /.idea
 /.editorconfig
 /.gitattributes
+/web/themes/custom/newspaper11/node_modules
