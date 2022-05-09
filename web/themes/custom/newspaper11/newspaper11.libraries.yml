@@ -1,7 +1,9 @@
 global-styling:
   version: 1.x
   css:
+    component:
+      dist/style.css: {}
     theme:
-      css/style.css: {}
+      dist/style.css: {}
   js:
     js/script.js: {}
