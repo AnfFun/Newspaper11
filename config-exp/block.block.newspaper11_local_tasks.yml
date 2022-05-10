@@ -1,0 +1,22 @@
+uuid: 2d183fa2-9f0c-4e94-a279-6d674e475518
+langcode: en
+status: true
+dependencies:
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: newspaper11_local_tasks
+theme: newspaper11
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

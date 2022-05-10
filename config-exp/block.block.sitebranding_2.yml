@@ -1,0 +1,23 @@
+uuid: c0ec1840-4c66-4c63-b5e5-79aee200ce94
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newspaper11
+id: sitebranding_2
+theme: newspaper11
+region: footer_fifth
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

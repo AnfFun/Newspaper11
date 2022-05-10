@@ -1,0 +1,25 @@
+uuid: 394907eb-7639-42c7-81a0-83f70440ac8c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:279f8300-5e2a-40dc-bdb9-6c9b412d720a'
+  module:
+    - block_content
+  theme:
+    - newspaper11
+id: newspaper11_aboutusfooterblock
+theme: newspaper11
+region: footer_fifth
+weight: -9
+provider: null
+plugin: 'block_content:279f8300-5e2a-40dc-bdb9-6c9b412d720a'
+settings:
+  id: 'block_content:279f8300-5e2a-40dc-bdb9-6c9b412d720a'
+  label: 'About us(footer block)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

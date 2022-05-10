@@ -1,0 +1,20 @@
+uuid: e38716f9-a714-4801-b777-c12d7873193f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: newspaper11_page_title
+theme: newspaper11
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

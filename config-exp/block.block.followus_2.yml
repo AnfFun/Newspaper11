@@ -1,0 +1,25 @@
+uuid: 28c56c6a-e840-450a-8f47-be51e5d919ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+  module:
+    - block_content
+  theme:
+    - newspaper11
+id: followus_2
+theme: newspaper11
+region: footer_fifth
+weight: -8
+provider: null
+plugin: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+settings:
+  id: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
+  label: 'FOLLOW US'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
