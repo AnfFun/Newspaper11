@@ -52,3 +52,6 @@
 /.editorconfig
 /.gitattributes
 /web/themes/custom/newspaper11/node_modules
+/web/themes/custom/newspaper11/dist
+/node_modules
+
