@@ -3,4 +3,3 @@ global-styling:
   css:
     theme:
       dist/style.css: {}
-g
