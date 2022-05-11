@@ -16,9 +16,9 @@ provider: null
 plugin: 'views_block:popular_posts_in_footer-block_1'
 settings:
   id: 'views_block:popular_posts_in_footer-block_1'
-  label: ''
+  label: 'Popular posts '
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Popular posts '
   items_per_page: none
 visibility: {  }

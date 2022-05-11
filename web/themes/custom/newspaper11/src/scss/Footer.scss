@@ -1,12 +1,28 @@
+//
+// Scss import
+//
 @import "mixin";
 @import "variables";
-
+//
 // Footer-global
+//
 .site-footer {
   background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("../img/footer-bg1.jpg");
+  @include reset;
+  padding-top: 5%;
 }
-g
-//Footer-Top
+
+a, a.link {
+  border-bottom: none;
+}
+
+.field--type-entity-reference {
+  @include reset;
+}
+
+//
+// Footer-Top
+//
 header .node__title a {
   display: none;
 }
@@ -20,5 +36,24 @@ header .node__title a {
 
 .site-footer .block {
   border: none;
-  @include reset
+  @include reset;
 }
+
+.layout--twocol-section {
+  flex-wrap: nowrap;
+}
+
+.site-footer .content a, .site-footer .content a.is-active {
+  color: $white;
+  font-size: $f14;
+
+}
+
+.layout--twocol-section > .layout__region {
+  flex: 0 1 100%;
+
+}
+
+//
+// Sorry for unsorted style because i'm starting to sort my style on footer-bootom
+//
