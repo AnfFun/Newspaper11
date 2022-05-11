@@ -1,7 +1,24 @@
 @import "mixin";
 @import "variables";
-// Footer-global
 
+// Footer-global
 .site-footer {
-background-image:linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)),  url("../img/footer-bg1.jpg");
+  background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("../img/footer-bg1.jpg");
+}
+g
+//Footer-Top
+header .node__title a {
+  display: none;
+}
+
+.site-footer__top h2 {
+  border: none;
+  color: $white;
+  font-size: $f18;
+  font-weight: bold;
+}
+
+.site-footer .block {
+  border: none;
+  @include reset
 }
