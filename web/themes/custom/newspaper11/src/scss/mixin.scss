@@ -1,0 +1,15 @@
+// Mixin
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin Ftitle {
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+@mixin flex {
+  display: flex;
+}
