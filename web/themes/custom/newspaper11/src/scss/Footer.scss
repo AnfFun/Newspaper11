@@ -1,35 +1,69 @@
-//Mixin for footer
+// Mixin for footer
 @mixin reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@mixin Ftitle{
-  font-family: roboto,sans-serif;
+@mixin Ftitle {
+  font-family: roboto, sans-serif;
   font-size: 12px;
   color: #FFFFFF;
 }
-//Mixin ends
 
-//Variables for footer
-
-//Variables ends
-
-  .site-footer{
-background-color: black;
+@mixin flex {
+  display: flex;
 }
-.site-footer .block{
+
+// Mixin ends
+
+// Variables for footer
+// Variables ends
+
+// Footer-global
+
+.site-footer {
+  background-color: black;
+  margin: 0;
+  padding: 4%;
+}
+
+.site-footer .block {
   border: none;
   @include reset;
-
 }
-.site-footer .content a, .site-footer .content a.is-active{
+
+.site-footer .content a, .site-footer .content a.is-active {
   @include Ftitle
 }
-.site-footer__top h2{
+
+// Footer-top
+.site-footer__top h2 {
   border-bottom: none;
   display: none;
 }
 
+// Footer-bottom
+.site-footer__bottom div {
+  display: flex;
+}
 
+.site-footer__bottom {
+  @include reset;
+}
+
+.site-footer__bottom .block h2 {
+  display: none;
+}
+
+.footer__about ,h1 {
+  color: #FFFFFF;
+}
+.footer__about{
+  margin-left: 5%;
+}
+
+
+.footer__about__us__text {
+  margin-top: 5%
+}
