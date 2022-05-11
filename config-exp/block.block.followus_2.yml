@@ -17,7 +17,7 @@ plugin: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
 settings:
   id: 'block_content:3a2804ea-9c2d-4923-9465-60fa39cc37bb'
   label: 'FOLLOW US'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

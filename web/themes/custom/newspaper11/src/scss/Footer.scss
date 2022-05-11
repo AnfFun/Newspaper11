@@ -1,10 +1,10 @@
 //
-// Scss import
+// SCSS IMPORT
 //
 @import "mixin";
 @import "variables";
 //
-// Footer-global
+// FOOTER-GLOBAL -------------------------------------------------------------------------------------------------------
 //
 .site-footer {
   background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("../img/footer-bg1.jpg");
@@ -21,7 +21,7 @@ a, a.link {
 }
 
 //
-// Footer-Top
+// FOOTER-TOP ----------------------------------------------------------------------------------------------------------
 //
 header .node__title a {
   display: none;
@@ -54,6 +54,42 @@ header .node__title a {
 
 }
 
+
 //
 // Sorry for unsorted style because i'm starting to sort my style on footer-bootom
+//
+
+//
+//FOOTER-BOTTOM ------------------------------------------------------------------------------------------------------
+//
+
+//
+// SITE-LOGO
+//
+
+.site-branding__logo {
+  margin-left: 13%;
+}
+
+
+//
+// ABOUT US
+//
+.block-block-content279f8300-5e2a-40dc-bdb9-6c9b412d720a {
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: $f18;
+    color: $white;
+  }
+
+  p {
+    color: $grey;
+    font-size: $f14;
+  }
+}
+
+
+//
+// FOLLOW US
 //
