@@ -8,6 +8,8 @@
 //
 .site-footer {
   background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("../img/footer-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   @include reset;
   padding-top: 5%;
 }
@@ -67,8 +69,10 @@ header .node__title a {
 // SITE-LOGO
 //
 
-.site-branding__logo {
-  margin-left: 13%;
+.site-branding.block-system-branding-block{
+  .site-branding__logo{
+    margin: 10% 0% 5% 13%;
+  }
 }
 
 
@@ -86,6 +90,8 @@ header .node__title a {
   p {
     color: $grey;
     font-size: $f14;
+    padding-right: 3%;
+    margin-top: 5%;
   }
 }
 
