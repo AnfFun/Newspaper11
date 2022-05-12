@@ -110,9 +110,27 @@ header .node__title a {
 
 
   }
-  p{
+
+  p {
     text-align: center;
 
-  }
+    .follow_us__face-link {
+      margin-right: 10%;
+      background-color: blue;
 
+    }
+
+    .follow_us__insta-link {
+      margin-right: 10%;
+      background-color: pink;
+    }
+
+    .follow_us__vk-link {
+      margin-right: 10%;
+      background-color: #0c97ed;
+    }
+  }
 }
+
+
+
