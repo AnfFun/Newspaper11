@@ -1,7 +1,12 @@
 @import "variables";
-// Inporting scss variables
+/*
+Inporting scss variables
+*/
 @import "mixin";
-// Importing scss mixin
+
+/*
+Importing scss mixin
+*/
 
 .block-block-contentd7006e55-3d70-43a8-9549-2c936a844eb5 {
   display: none;
@@ -16,17 +21,31 @@
   display: flex;
 
   .block-system-branding-block {
-    margin-left: 15%;
 
 
     .site-branding__logo {
 
 
       img {
-        max-width: 70%;
+        max-width: 100%;
       }
     }
   }
 }
 
+.site-branding.block-system-branding-block .site-branding__logo {
+  margin: 0 !important;
+}
 
+/*
+Break basic class for site-branding logo
+*/
+.region-header .block:not(.site-branding) {
+  margin: 9% 0 10% 10%;
+  padding: 1% 1% 1% 2% ;
+
+}
+
+.region-header .block-menu {
+  width: 15%;
+}
