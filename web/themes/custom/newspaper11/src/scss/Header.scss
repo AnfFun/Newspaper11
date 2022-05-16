@@ -1,0 +1,32 @@
+@import "variables";
+// Inporting scss variables
+@import "mixin";
+// Importing scss mixin
+
+.block-block-contentd7006e55-3d70-43a8-9549-2c936a844eb5 {
+  display: none;
+}
+
+.block-block-content18bb9bd8-4f5a-461c-8cf6-dff0ac135d01 {
+  display: none;
+}
+
+.region-header {
+  background-color: $header;
+  display: flex;
+
+  .block-system-branding-block {
+    margin-left: 15%;
+
+
+    .site-branding__logo {
+
+
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+
