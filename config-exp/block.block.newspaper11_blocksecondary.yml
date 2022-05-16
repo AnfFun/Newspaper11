@@ -1,0 +1,25 @@
+uuid: 3c08d484-3017-4817-b4dd-caa07d83c7d2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d7006e55-3d70-43a8-9549-2c936a844eb5'
+  module:
+    - block_content
+  theme:
+    - newspaper11
+id: newspaper11_blocksecondary
+theme: newspaper11
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'block_content:d7006e55-3d70-43a8-9549-2c936a844eb5'
+settings:
+  id: 'block_content:d7006e55-3d70-43a8-9549-2c936a844eb5'
+  label: 'Block secondary'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

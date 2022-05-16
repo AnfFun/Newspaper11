@@ -1,0 +1,136 @@
+//
+// SCSS IMPORT
+//
+@import "mixin";
+@import "variables";
+//
+// FOOTER-GLOBAL -------------------------------------------------------------------------------------------------------
+//
+.site-footer {
+  background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("../img/footer-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include reset;
+  padding-top: 5%;
+}
+
+a, a.link {
+  border-bottom: none;
+}
+
+.field--type-entity-reference {
+  @include reset;
+}
+
+//
+// FOOTER-TOP ----------------------------------------------------------------------------------------------------------
+//
+header .node__title a {
+  display: none;
+}
+
+.site-footer__top h2 {
+  border: none;
+  color: $white;
+  font-size: $f18;
+  font-weight: bold;
+}
+
+.site-footer .block {
+  border: none;
+  @include reset;
+}
+
+.layout--twocol-section {
+  flex-wrap: nowrap;
+}
+
+.site-footer .content a, .site-footer .content a.is-active {
+  color: $white;
+  font-size: $f14;
+
+}
+
+.layout--twocol-section > .layout__region {
+  flex: 0 1 100%;
+
+}
+
+
+//
+// Sorry for unsorted style because i'm starting to sort my style on footer-bootom
+//
+
+//
+//FOOTER-BOTTOM ------------------------------------------------------------------------------------------------------
+//
+
+//
+// SITE-LOGO
+//
+
+.site-branding.block-system-branding-block{
+  .site-branding__logo{
+    margin: 10% 0% 5% 13%;
+  }
+}
+
+
+//
+// ABOUT US
+//
+.block-block-content279f8300-5e2a-40dc-bdb9-6c9b412d720a {
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: $f18;
+    color: $white;
+  }
+
+  p {
+    color: $grey;
+    font-size: $f14;
+    padding-right: 3%;
+    margin-top: 5%;
+  }
+}
+
+
+//
+// FOLLOW US
+//
+.block-block-content3a2804ea-9c2d-4923-9465-60fa39cc37bb {
+  h3 {
+    text-align: center;
+    color: $white;
+    font-size: $f18;
+    margin-bottom: 8%;
+    margin-top: 0%;
+    font-weight: bold;
+
+
+  }
+
+  p {
+    text-align: center;
+
+    .follow_us__face-link {
+      margin-right: 10%;
+      background-color: blue;
+
+    }
+
+    .follow_us__insta-link {
+      margin-right: 10%;
+      background-color: pink;
+    }
+
+    .follow_us__vk-link {
+      margin-right: 10%;
+      background-color: #0c97ed;
+    }
+  }
+}
+
+
+

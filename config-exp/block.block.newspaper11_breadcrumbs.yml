@@ -1,0 +1,26 @@
+uuid: bd2d414e-8598-4f26-9333-247d1fc6a70f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: newspaper11_breadcrumbs
+theme: newspaper11
+region: breadcrumb
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /node/27

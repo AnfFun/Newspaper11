@@ -6,7 +6,12 @@ dependencies:
     - block_content.type.basic
     - field.storage.block_content.body
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - full_html
 _core:
   default_config_hash: foetbaMhlB6uLc2bn-PESvaPkbuDWj0MEjpQVwQiP-o
 id: block_content.basic.body

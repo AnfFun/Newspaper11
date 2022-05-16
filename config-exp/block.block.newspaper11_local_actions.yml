@@ -1,0 +1,20 @@
+uuid: 39860a00-0b73-4c0a-a49e-77811b6e0746
+langcode: en
+status: true
+dependencies:
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: newspaper11_local_actions
+theme: newspaper11
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

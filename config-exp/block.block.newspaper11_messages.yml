@@ -1,0 +1,22 @@
+uuid: a3ac104a-ec19-4e9f-9063-5d7f5aeab223
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: newspaper11_messages
+theme: newspaper11
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

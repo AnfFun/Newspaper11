@@ -1,0 +1,22 @@
+uuid: 7cb75a64-79a2-4b99-b937-3d2020974b02
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - newspaper11
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: newspaper11_help
+theme: newspaper11
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
