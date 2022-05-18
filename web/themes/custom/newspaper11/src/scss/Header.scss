@@ -42,10 +42,26 @@ Break basic class for site-branding logo
 */
 .region-header .block:not(.site-branding) {
   margin: 9% 0 10% 10%;
-  padding: 1% 1% 1% 2% ;
+  padding: 1% 1% 1% 2%;
 
 }
 
 .region-header .block-menu {
   width: 15%;
+}
+
+.menu--main {
+  background-color: $black;
+
+}
+
+body:not(:target) .region-primary-menu .menu-toggle {
+  background-color: $black;
+  color: $white;
+}
+
+.region-primary-menu .menu a {
+  background-color: $black;
+  color: $white;
+  text-align: center;
 }
