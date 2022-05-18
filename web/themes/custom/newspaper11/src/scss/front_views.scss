@@ -1,0 +1,67 @@
+/*
+Importing mixin and variabes for scss
+ */
+@import "mixin";
+@import "variables";
+
+/*
+Stylyzing Don't miss view on frontpage
+ */
+.block-views-blockdont-miss-block-1 {
+
+  .layout--twocol-section {
+    flex-wrap: wrap;
+
+  }
+
+  .block-views-blockdont-miss-view-mode1--block-1 {
+    border-top: 2px solid #f9c100;
+    margin-top: -10px;
+
+    .block-field-blocknodearticleuid {
+      display: flex;
+      justify-content: start;
+      a{
+        font-size: $f11;
+        font-weight: bold;
+        color: black;
+      }
+    }
+
+    .content {
+      margin-top: 0;
+
+      .block-field-blocknodearticlecreated {
+        display: flex;
+        justify-content: start;
+
+        span {
+          font-size: $f11;
+        }
+      }
+    }
+
+
+    .block-field-blocknodearticletitle {
+      a {
+        color: #f9c100;
+        text-transform: uppercase;
+        font-size: 21px;
+      }
+    }
+  }
+  .block-field-blocknodearticlebody{
+    color: $ltcol;
+    font-size: $f16;
+  }
+}
+
+.main-content h2 {
+  margin-block: auto;
+  background-color: #f9c100;
+  max-width: 32%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
