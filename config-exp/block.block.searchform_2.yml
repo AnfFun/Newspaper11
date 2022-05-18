@@ -1,0 +1,25 @@
+uuid: 9d703595-af5d-4cb7-9b35-d33807d884d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.search-
+  module:
+    - system
+  theme:
+    - newspaper11
+id: searchform_2
+theme: newspaper11
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:search-'
+settings:
+  id: 'system_menu_block:search-'
+  label: 'search form'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
