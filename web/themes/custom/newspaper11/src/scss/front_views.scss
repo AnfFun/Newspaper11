@@ -5,7 +5,7 @@ Importing mixin and variabes for scss
 @import "variables";
 
 /*
-Stylyzing Don't miss view on frontpage
+Stylyzing block on top in Don't miss view on frontpage
  */
 .block-views-blockdont-miss-block-1 {
 
@@ -65,3 +65,47 @@ Stylyzing Don't miss view on frontpage
 
 }
 
+/*
+Stylyzing block on bottom in Don't miss view on frontpage
+ */
+.block-views-blockdont-miss-view-mode2--block-1 {
+  display: flex;
+
+  .block-field-blocknodearticlefield-media-for-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .block-field-blocknodearticletitle {
+    .content {
+      @include reset;
+    }
+
+  }
+
+  .block-field-blocknodearticlecreated {
+
+    .content {
+
+      @include reset;
+
+    }
+
+  }
+  a{
+    display: flex;
+    justify-content: center;
+  }
+  a, .link {
+    color: black;
+    font-size: $f14;
+
+  }
+
+  span {
+    font-size: $f11;
+    color: #767676;
+    display: flex;
+    justify-content: center;
+  }
+}
