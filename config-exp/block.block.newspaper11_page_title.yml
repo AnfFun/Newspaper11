@@ -1,6 +1,6 @@
 uuid: e38716f9-a714-4801-b777-c12d7873193f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - newspaper11
