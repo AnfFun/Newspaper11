@@ -4,10 +4,24 @@ Importing mixin and variabes for scss
 @import "mixin";
 @import "variables";
 
+
+/*
+Stylyzing Don't miss view on frontpage
+ */
+
+
 /*
 Stylyzing block on top in Don't miss view on frontpage
  */
 .block-views-blockdont-miss-block-1 {
+  h2 {
+    margin-block: auto;
+    background-color: #f9c100;
+    max-width: 32%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
 
   .layout--twocol-section {
     flex-wrap: wrap;
@@ -56,14 +70,7 @@ Stylyzing block on top in Don't miss view on frontpage
   }
 }
 
-.main-content h2 {
-  margin-block: auto;
-  background-color: #f9c100;
-  max-width: 32%;
-  padding-left: 2%;
-  padding-right: 2%;
 
-}
 
 /*
 Stylyzing block on bottom in Don't miss view on frontpage
@@ -108,4 +115,84 @@ Stylyzing block on bottom in Don't miss view on frontpage
     display: flex;
     justify-content: center;
   }
+}
+
+/*
+Stylyzing Lifestyle News view on frontpage
+ */
+.block-views-blocklifestyle-news-block-1 {
+  margin-top: 20%;
+
+  h2 {
+    margin-block: auto;
+    background-color: #3a863d;
+    max-width: 47%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: $white;
+  }
+
+  /*
+  Stylyzing  big block in Lifestile news
+   */
+  .node--view-mode-big-picture-down-tex {
+    .block-field-blocknodearticletitle {
+      .field--name-title {
+
+        a {
+          color: #3a863d;
+          text-transform: uppercase;
+          font-size: 21px;
+        }
+      }
+
+    }
+
+    .block-field-blocknodearticleuid {
+
+      display: flex;
+      justify-content: start;
+
+      a {
+        font-size: $f11;
+        font-weight: bold;
+        color: black;
+      }
+
+      .content {
+        @include reset
+      }
+
+    }
+
+    .block-field-blocknodearticlecreated {
+      .content {
+        display: flex;
+        justify-content: start;
+
+        span {
+          color: $dd;
+          font-size: $f11;
+        }
+
+        @include reset;
+      }
+
+    }
+
+    .block-field-blocknodearticlebody {
+      color: $dd;
+      font-size: $f16;
+    }
+  }
+
+  /*
+  Create border for Lifestyle news
+   */
+  .js-view-dom-id-77dc1a552a854152895038eb0e795a5dba767cdaf0c8e0573423d4b92e790a2c {
+    border-top: 2px solid #3a863d;
+    margin-top: -10px;
+  }
+
+
 }
