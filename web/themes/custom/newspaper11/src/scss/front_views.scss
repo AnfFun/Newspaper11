@@ -21,6 +21,7 @@ Stylyzing block on top in Don't miss view on frontpage
     padding-left: 2%;
     padding-right: 2%;
 
+
   }
 
   .layout--twocol-section {
@@ -126,10 +127,12 @@ Stylyzing Lifestyle News view on frontpage
   h2 {
     margin-block: auto;
     background-color: #3a863d;
-    max-width: 47%;
+    max-width: 34%;
     padding-left: 2%;
     padding-right: 2%;
     color: $white;
+    font-size: $f14;
+    height: 40%;
   }
 
   /*
@@ -194,5 +197,23 @@ Stylyzing Lifestyle News view on frontpage
     margin-top: -10px;
   }
 
+  /*
+  Theming  small article block in Lifestyle news
+   */
+  .block-views-blocklifestyle-news-bottom--block-1 {
+    .content{
+      @include reset;
+    }
+    span {
+      color: $dd;
+      font-size: $f11;
+      a {
+        @include lit_titlename;
+      }
 
+    }
+
+
+
+  }
 }

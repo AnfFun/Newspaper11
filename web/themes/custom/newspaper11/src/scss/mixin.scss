@@ -10,6 +10,9 @@
   color: #FFFFFF;
 }
 
-@mixin flex {
-  display: flex;
+@mixin lit_titlename {
+  text-decoration: none;
+  color:$titlename;
+  font-size: $f14;
+  font-weight: bold;
 }
