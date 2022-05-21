@@ -247,8 +247,9 @@ Stylyzing Lifestyle News view on frontpage
   }
 
   .block-field-blocknodearticletitle {
-    .content
-    {padding-top:20px}
+    .content {
+      padding-top: 20px
+    }
 
     a {
       @include lit_titlename;
@@ -258,7 +259,7 @@ Stylyzing Lifestyle News view on frontpage
 
   .block-field-blocknodearticlecreated {
     .content {
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     span {
@@ -267,3 +268,60 @@ Stylyzing Lifestyle News view on frontpage
   }
 }
 
+/*
+Desktop version for house design view
+ */
+@media screen and (min-width: 1024px) {
+  .block-views-blockhouse-design-block-1 {
+    h2 {
+      background-color: #5d7987;
+      color: $title-view-color;
+      font-size: $f14;
+      padding: 5px 2%;
+      max-width: 12%;
+    }
+
+    .view-id-house_design {
+      border-top: 2px solid #5d7987;
+      margin-top: -10px;
+    }
+
+    .block-field-blocknodearticlefield-media-for-content {
+      float: none;
+      width: 100%;
+
+      img {
+        @include medi-img;
+      }
+    }
+
+    .block-field-blocknodearticletitle {
+      .content {
+        padding-top: 0;
+        max-width: 85%;
+        text-align: center;
+      }
+
+      a {
+        @include lit_titlename;
+        @include overflow-text;
+      }
+
+    }
+    .block-field-blocknodearticlecreated{
+      .content{
+        span{
+          display: none;
+        }
+      }
+    }
+
+    .col-3 {
+      .block-field-blocknodearticlefield-media-for-content{
+        margin-left: 10%;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,25 @@
+uuid: 7985e891-4047-4951-80da-32d76c591bc7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:88db23c7-445a-467a-be98-6d146edcb0b8'
+  module:
+    - block_content
+  theme:
+    - newspaper11
+id: adv_3
+theme: newspaper11
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:88db23c7-445a-467a-be98-6d146edcb0b8'
+settings:
+  id: 'block_content:88db23c7-445a-467a-be98-6d146edcb0b8'
+  label: adv
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

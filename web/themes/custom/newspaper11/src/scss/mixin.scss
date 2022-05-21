@@ -35,3 +35,8 @@
   -webkit-box-orient: vertical;
   box-orient: vertical;
 }
+
+@mixin medi-img {
+  width: 250px;
+  height: 180px;
+}
