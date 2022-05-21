@@ -9,7 +9,7 @@ _core:
 id: newspaper11_local_tasks
 theme: newspaper11
 region: content
-weight: -14
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:
