@@ -235,5 +235,35 @@ Stylyzing Lifestyle News view on frontpage
     border-top: 2px solid #5d7987;
     margin-top: -10px;
   }
+
+  .block-field-blocknodearticlefield-media-for-content {
+    float: left;
+    width: 40%;
+
+    img {
+      width: 110px;
+      height: 80px;
+    }
+  }
+
+  .block-field-blocknodearticletitle {
+    .content
+    {padding-top:20px}
+
+    a {
+      @include lit_titlename;
+      @include overflow-text;
+    }
+  }
+
+  .block-field-blocknodearticlecreated {
+    .content {
+      margin-top: 0;
+    }
+
+    span {
+      @include date;
+    }
+  }
 }
 
