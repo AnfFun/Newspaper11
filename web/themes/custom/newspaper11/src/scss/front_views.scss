@@ -193,7 +193,8 @@ Stylyzing Lifestyle News view on frontpage
   Create border for Lifestyle news
    */
   .js-view-dom-id-77dc1a552a854152895038eb0e795a5dba767cdaf0c8e0573423d4b92e790a2c {
-
+    border-top: 2px solid #3a863d;
+    margin-top: -10px;
   }
 
   /*
@@ -206,7 +207,6 @@ Stylyzing Lifestyle News view on frontpage
     span {
       color: $dd;
       font-size: $f11;
-
       a {
         @include lit_titlename;
       }
@@ -214,11 +214,12 @@ Stylyzing Lifestyle News view on frontpage
     }
 
 
+
   }
 }
 
 /*
- Stylyzing House design view of fontpage
+Stylyzing House design view of fontpage
 */
 
 .block-views-blockhouse-design-block-1 {
@@ -231,18 +232,5 @@ Stylyzing Lifestyle News view on frontpage
     max-width: 30%;
   }
 
-  .js-view-dom-id-3fbec5d3aaf96921ab38e80851cccd0fa441cd5b08cb8d6f3915e1b9818d6128 {
-
-    .block-field-blocknodearticlefield-media-for-content{
-      float: left;
-      img{
-        max-width: 50%;
-      }
-    }
-    .block-field-blocknodearticletitle{
-      a{
-        @include lit_titlename;
-      }
-    }
   }
-}
+
