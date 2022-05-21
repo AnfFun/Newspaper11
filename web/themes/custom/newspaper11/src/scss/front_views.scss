@@ -17,9 +17,9 @@ Stylyzing block on top in Don't miss view on frontpage
   h2 {
     margin-block: auto;
     background-color: #f9c100;
-    max-width: 32%;
-    padding-left: 2%;
-    padding-right: 2%;
+    max-width: 24%;
+    font-size: $f14;
+    @include view-h2;
 
 
   }
@@ -119,6 +119,57 @@ Stylyzing block on bottom in Don't miss view on frontpage
 }
 
 /*
+Desktop version for don't miss view
+ */
+@media screen and (min-width: 1024px) {
+  .block-views-blockdont-miss-block-1 .block-views-blockdont-miss-view-mode1--block-1 {
+    margin-top: 0;
+    border: none;
+  }
+
+  .block-views-blockdont-miss-block-1 {
+    .node--view-mode-footer-view{
+      margin-bottom: 10%;
+    }
+    .block-views-blockdont-miss-view-mode2--block-1 {
+      .block-field-blocknodearticletitle {
+        @include lit_titlename;
+
+      }
+    }
+
+    .block-field-blocknodearticlecreated {
+      display: flex;
+    }
+
+    .block-views-blockdont-miss-view-mode2--block-1 {
+      .content {
+        margin-top: 0;
+
+      }
+    }
+
+    .content {
+      .view-id-dont_miss {
+        border-top: 2px solid #f9c100;
+        margin-top: -10px;
+      }
+    }
+
+    h2 {
+      background-color: #f9c100;
+      max-width: 9%;
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: $f14;
+      color: $black;
+      @include view-h2
+
+    }
+  }
+}
+
+/*
 Stylyzing Lifestyle News view on frontpage
  */
 .block-views-blocklifestyle-news-block-1 {
@@ -128,8 +179,7 @@ Stylyzing Lifestyle News view on frontpage
     margin-block: auto;
     background-color: #3a863d;
     max-width: 34%;
-    padding-left: 2%;
-    padding-right: 2%;
+    @include view-h2
     color: $white;
     font-size: $f14;
     height: 40%;
@@ -223,8 +273,7 @@ Stylyzing Lifestyle News view on frontpage
     background-color: #5d7987;
     color: $title-view-color;
     font-size: $f14;
-    padding-left: 2%;
-    padding-right: 2%;
+    @include view-h2
     max-width: 30%;
   }
 
@@ -277,7 +326,7 @@ Desktop version for house design view
       background-color: #5d7987;
       color: $title-view-color;
       font-size: $f14;
-      padding: 5px 2%;
+      @include view-h2;
       max-width: 12%;
     }
 
