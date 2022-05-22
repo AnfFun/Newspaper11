@@ -435,6 +435,7 @@ Desktop version of Lifestyle news view
   .block-field-blocknodearticlecreated {
 
     .content {
+      margin: 0;
     }
 
     span {
@@ -448,6 +449,7 @@ Desktop version for house design view
  */
 @media screen and (min-width: 1024px) {
   .block-views-blockhouse-design-block-1 {
+    margin-top: 10%;
     h2 {
       background-color: #5d7987;
       color: $title-view-color;

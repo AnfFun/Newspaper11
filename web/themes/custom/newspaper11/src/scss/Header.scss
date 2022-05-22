@@ -65,3 +65,51 @@ body:not(:target) .region-primary-menu .menu-toggle {
   color: $white;
   text-align: center;
 }
+
+/*
+Desktop BETA version
+ */
+@media screen and (min-width: 1024px) {
+  .region-primary-menu .menu a {
+    background-color: $headerm;
+    color: $header;
+    text-align: center;
+    @include lit_titlename
+  }
+  .menu--main {
+    background-color: $headerm;
+
+    menu {
+      a {
+        color: $black;
+      }
+    }
+
+  }
+  .block-block-contentd7006e55-3d70-43a8-9549-2c936a844eb5 {
+    display: block;
+  }
+
+  .block-block-content18bb9bd8-4f5a-461c-8cf6-dff0ac135d01 {
+    display: block;
+  }
+  .region-header {
+
+    background-color: $headerm;
+
+    .block-system-branding-block {
+      visibility: hidden;
+    }
+
+    .menu--search- {
+      display: none;
+    }
+
+    .block-block-content18bb9bd8-4f5a-461c-8cf6-dff0ac135d01 {
+      img {
+        margin-left: 20%;
+      }
+    }
+
+  }
+}
