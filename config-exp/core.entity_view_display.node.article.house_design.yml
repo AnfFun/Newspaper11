@@ -71,6 +71,27 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          4527fc7f-1002-4b2c-818c-f574e2243159:
+            uuid: 4527fc7f-1002-4b2c-818c-f574e2243159
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: above
+                settings:
+                  date_format: custom
+                  custom_date_format: 'F j, o'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
