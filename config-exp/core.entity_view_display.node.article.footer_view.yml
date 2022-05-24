@@ -27,7 +27,7 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 50-50
+          column_widths: 33-67
         components:
           b73f5154-c724-4ccb-b37d-54c648101dfb:
             uuid: b73f5154-c724-4ccb-b37d-54c648101dfb
@@ -46,6 +46,35 @@ third_party_settings:
                 settings:
                   image_link: content
                   image_style: thumbnail
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cd43d0de-0328-4ecf-8f53-c719ce80840d:
+            uuid: cd43d0de-0328-4ecf-8f53-c719ce80840d
+            region: first
+            configuration:
+              id: 'extra_field_block:node:article:flippy_pager'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          332aa43e-9f35-4c34-bd5b-4c0f6bbf3053:
+            uuid: 332aa43e-9f35-4c34-bd5b-4c0f6bbf3053
+            region: second
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -68,35 +97,6 @@ third_party_settings:
                   custom_date_format: 'F j, o'
                   timezone: Europe/Kiev
                 third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          332aa43e-9f35-4c34-bd5b-4c0f6bbf3053:
-            uuid: 332aa43e-9f35-4c34-bd5b-4c0f6bbf3053
-            region: second
-            configuration:
-              id: 'field_block:node:article:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: true
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          cd43d0de-0328-4ecf-8f53-c719ce80840d:
-            uuid: cd43d0de-0328-4ecf-8f53-c719ce80840d
-            region: first
-            configuration:
-              id: 'extra_field_block:node:article:flippy_pager'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
             weight: 1
             additional: {  }
         third_party_settings: {  }

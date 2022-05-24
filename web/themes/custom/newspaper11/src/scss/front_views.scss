@@ -17,9 +17,9 @@ Stylyzing block on top in Don't miss view on frontpage
   h2 {
     margin-block: auto;
     background-color: #f9c100;
-    max-width: 32%;
-    padding-left: 2%;
-    padding-right: 2%;
+    max-width: 24%;
+    font-size: $f14;
+    @include view-h2;
 
 
   }
@@ -119,6 +119,80 @@ Stylyzing block on bottom in Don't miss view on frontpage
 }
 
 /*
+Desktop version for don't miss view
+ */
+@media screen and (min-width: 1024px) {
+  .block-views-blockdont-miss-block-1 .block-views-blockdont-miss-view-mode1--block-1 {
+    margin-top: 0;
+    border: none;
+  }
+
+  .block-views-blockdont-miss-block-1 {
+    .block-views-blockdont-miss-view-mode1--block-1 {
+      .block-field-blocknodearticletitle {
+        a {
+          text-transform: none
+        }
+      }
+    }
+
+
+    .node--view-mode-footer-view {
+      margin-bottom: 10%;
+    }
+
+    .block-views-blockdont-miss-view-mode2--block-1 {
+      .block-field-blocknodearticletitle {
+        a {
+          text-transform: none;
+        }
+
+        @include lit_titlename;
+
+        span {
+          a {
+            text-transform: none
+          }
+        }
+
+        a {
+          @include overflow-text;
+        }
+      }
+    }
+
+    .block-field-blocknodearticlecreated {
+      display: flex;
+    }
+
+    .block-views-blockdont-miss-view-mode2--block-1 {
+      .content {
+        margin-top: 0;
+
+      }
+    }
+
+    .content {
+      .view-id-dont_miss {
+        border-top: 2px solid #f9c100;
+        margin-top: -10px;
+      }
+    }
+
+    h2 {
+      background-color: #f9c100;
+      max-width: 9%;
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: $f14;
+      color: $black;
+      @include view-h2
+
+    }
+  }
+}
+
+/*
 Stylyzing Lifestyle News view on frontpage
  */
 .block-views-blocklifestyle-news-block-1 {
@@ -128,8 +202,7 @@ Stylyzing Lifestyle News view on frontpage
     margin-block: auto;
     background-color: #3a863d;
     max-width: 34%;
-    padding-left: 2%;
-    padding-right: 2%;
+    @include view-h2;
     color: $white;
     font-size: $f14;
     height: 40%;
@@ -215,16 +288,125 @@ Stylyzing Lifestyle News view on frontpage
 }
 
 /*
+Desktop version of Lifestyle news view
+ */
+@media screen and (min-width: 1024px) {
+  .block-views-blocklifestyle-news-block-1 {
+     .block-views-blocklifestyle-news-bottom--block-1{
+       img{
+         width: 100px;
+         height: 67px;
+       }
+     }
+    .node--view-mode-big-picture-down-tex .block-field-blocknodearticlecreated .content{
+      display:block;
+      span{
+        margin-left: 2%;
+      }
+    }
+    .node--view-mode-big-picture-down-tex {
+
+      .block-field-blocknodearticleuid {
+        display: block;
+        float: left
+      }
+    }
+
+    margin-top: 10%;
+
+
+
+    h2 {
+      width: 13%;
+    }
+
+    .view-lifestyle-news {
+      border-top: 2px solid #3a863d;
+      margin-top: -10px;
+
+
+    }
+
+
+    .col-1 {
+      .block-field-blocknodearticlefield-media-for-content {
+
+        //width: 80%;
+      }
+
+      .block-field-blocknodearticlebody {
+        //width: 80%;
+      }
+
+      .block-field-blocknodearticletitle {
+        //width: 80%;
+
+        .field--name-title {
+          a {
+            text-transform: none
+          }
+
+        }
+      }
+    }
+
+    .col-2 {
+      .block-field-blocknodearticlefield-media-for-content {
+        //width: 80%;
+      }
+
+      .block-field-blocknodearticlebody {
+        //width: 80%;
+      }
+
+      .block-field-blocknodearticletitle {
+        //width: 80%;
+
+        .field--name-title {
+          a {
+            text-transform: none
+          }
+
+        }
+      }
+    }
+    .view-lifestyle-news-bottom-{
+      .views-view-grid.horizontal .views-row{
+        margin: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+      //padding-right: 15%;
+      .layout__region--second{
+        //margin-right:20% ;
+        a{
+          @include overflow-text-l3;
+        }
+      }
+      .block-field-blocknodearticlefield-media-for-content{
+        img{
+          max-width: none;
+          @include lit-img;
+          margin-right:0;
+          padding-right:0;
+        }
+      }
+
+    }
+  }
+}
+
+/*
  Stylyzing House design view of fontpage
 */
 
 .block-views-blockhouse-design-block-1 {
+
   h2 {
     background-color: #5d7987;
     color: $title-view-color;
     font-size: $f14;
-    padding-left: 2%;
-    padding-right: 2%;
+    @include view-h2;
     max-width: 30%;
   }
 
@@ -247,8 +429,9 @@ Stylyzing Lifestyle News view on frontpage
   }
 
   .block-field-blocknodearticletitle {
-    .content
-    {padding-top:20px}
+    .content {
+      padding-top: 20px
+    }
 
     a {
       @include lit_titlename;
@@ -257,8 +440,9 @@ Stylyzing Lifestyle News view on frontpage
   }
 
   .block-field-blocknodearticlecreated {
+
     .content {
-      margin-top: 0;
+      margin: 0;
     }
 
     span {
@@ -267,3 +451,66 @@ Stylyzing Lifestyle News view on frontpage
   }
 }
 
+/*
+Desktop version for house design view
+ */
+@media screen and (min-width: 1024px) {
+  .block-views-blockhouse-design-block-1 {
+    margin-top: 10%;
+    h2 {
+      background-color: #5d7987;
+      color: $title-view-color;
+      font-size: $f14;
+      @include view-h2;
+      max-width: 12%;
+    }
+
+    .view-id-house_design {
+      border-top: 2px solid #5d7987;
+      margin-top: -10px;
+    }
+
+    .block-field-blocknodearticlefield-media-for-content {
+      float: none;
+      width: 100%;
+
+
+      img {
+        @include medi-img;
+
+      }
+    }
+
+    .block-field-blocknodearticletitle {
+      .content {
+        padding-top: 0;
+        max-width: 85%;
+        text-align: center;
+      }
+
+      a {
+        @include lit_titlename;
+        @include overflow-text;
+      }
+
+    }
+    .block-field-blocknodearticlecreated{
+      .content{
+        span{
+          display: none;
+        }
+      }
+    }
+
+    .col-3 {
+      .block-field-blocknodearticlefield-media-for-content{
+        margin-left: 10%;
+      }
+      .block-field-blocknodearticletitle{
+        margin-left: 10%;
+      }
+    }
+
+  }
+
+}
