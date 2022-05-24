@@ -506,11 +506,62 @@ Desktop version for house design view
       .block-field-blocknodearticlefield-media-for-content{
         margin-left: 10%;
       }
-      .block-field-blocknodearticletitle{
+
+      .block-field-blocknodearticletitle {
         margin-left: 10%;
       }
     }
 
   }
 
+}
+
+/*
+Theming Perfomance training on frontpage
+ */
+.block-views-blockperfomance-training-block-1 {
+  .view-display-id-block_1 {
+    border-top: 2px solid #222222;
+    margin-top: -10px;
+  }
+
+  h2 {
+    @include view-h2;
+    background-color: $cperft;
+    color: $white;
+    width: 35%;
+    font-size: $f14;
+
+  }
+
+  .layout--twocol-section {
+    display: block;
+  }
+
+  img {
+    @include lit-img
+  }
+
+  .block-field-blocknodearticlebody {
+    display: none;
+  }
+
+  .block-field-blocknodearticlefield-media-for-content {
+    margin-right: 5%;
+    float: left;
+  }
+
+  .block-field-blocknodearticletitle {
+    a {
+      @include lit_titlename;
+      @include overflow-text;
+      padding-top: 5%;
+    }
+
+  }
+
+  .block-field-blocknodearticlecreated {
+    @include date;
+    margin-top: -3%;
+  }
 }
