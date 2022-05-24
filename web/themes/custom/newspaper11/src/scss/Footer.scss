@@ -132,5 +132,99 @@ header .node__title a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .site-footer__top .region {
+    width: 100%;
+  }
+  footer {
+    .site-footer__top {
+      img {
+        width: 100px;
+        height: 67px;
+      }
+
+      display: flex;
+      justify-content: center;
+
+      .region {
+
+      }
+
+      .region-footer-first {
+        padding: 0;
+
+        .block-views-blockeditor-picks-block-1 {
+          .layout__region--second {
+            padding-right: 30%;
+          }
+
+          .block-field-blocknodearticlefield-media-for-content {
+
+          }
+
+          a {
+            @include lit_titlename;
+            color: $white;
+            @include overflow-text;
+          }
+        }
+      }
+
+      .region-footer-second {
+        .block-views-blockpopular-posts-in-footer-block-1 {
+
+          .layout__region--second {
+            padding-right: 30%;
+
+            a {
+              @include lit_titlename;
+              color: $white;
+              @include overflow-text;
+            }
+          }
+        }
+      }
+
+      .region-footer-fourth {
+        width: 60%;
+
+        .views-field-nid {
+          .field-content {
+            float: right;
+          }
+        }
+
+        .views-field-name {
+          a {
+            color: $white;
+            list-style: none;
+            line-height: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .site-footer__bottom {
+      .block-system-branding-block {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .block-block-content279f8300-5e2a-40dc-bdb9-6c9b412d720a {
+      text-align: center;
+    }
+
+    .block-block-content3a2804ea-9c2d-4923-9465-60fa39cc37bb {
+      p{
+        text-align: center;
+        margin-left: 6%;
+      }
+    }
+  }
+}
+
+
 
 
