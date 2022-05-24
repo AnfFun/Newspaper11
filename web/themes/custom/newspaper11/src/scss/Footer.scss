@@ -50,9 +50,18 @@ header .node__title a {
   font-size: $f14;
 
 }
+.region-footer-fourth{
+  .views-field-name{
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .views-field-nid{
+    float: right;
+    color: $white;
+    font-weight: bold;
+    font-size: $f14;
 
-.layout--twocol-section > .layout__region {
-  flex: 0 1 100%;
+  }
 
 }
 
@@ -131,7 +140,9 @@ header .node__title a {
     }
   }
 }
-
+/*
+Desktop version of footer
+ */
 @media screen and (min-width: 1024px) {
   .site-footer__top .region {
     width: 100%;
