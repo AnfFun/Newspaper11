@@ -292,6 +292,12 @@ Desktop version of Lifestyle news view
  */
 @media screen and (min-width: 1024px) {
   .block-views-blocklifestyle-news-block-1 {
+     .block-views-blocklifestyle-news-bottom--block-1{
+       img{
+         width: 100px;
+         height: 67px;
+       }
+     }
     .node--view-mode-big-picture-down-tex .block-field-blocknodearticlecreated .content{
       display:block;
       span{
@@ -299,6 +305,7 @@ Desktop version of Lifestyle news view
       }
     }
     .node--view-mode-big-picture-down-tex {
+
       .block-field-blocknodearticleuid {
         display: block;
         float: left
@@ -307,9 +314,7 @@ Desktop version of Lifestyle news view
 
     margin-top: 10%;
 
-    .layout--onecol .layout__region {
-      width: 95%;
-    }
+
 
     h2 {
       width: 13%;
@@ -319,20 +324,22 @@ Desktop version of Lifestyle news view
       border-top: 2px solid #3a863d;
       margin-top: -10px;
 
+
     }
 
 
     .col-1 {
       .block-field-blocknodearticlefield-media-for-content {
-        width: 80%;
+
+        //width: 80%;
       }
 
       .block-field-blocknodearticlebody {
-        width: 80%;
+        //width: 80%;
       }
 
       .block-field-blocknodearticletitle {
-        width: 80%;
+        //width: 80%;
 
         .field--name-title {
           a {
@@ -345,15 +352,15 @@ Desktop version of Lifestyle news view
 
     .col-2 {
       .block-field-blocknodearticlefield-media-for-content {
-        width: 80%;
+        //width: 80%;
       }
 
       .block-field-blocknodearticlebody {
-        width: 80%;
+        //width: 80%;
       }
 
       .block-field-blocknodearticletitle {
-        width: 80%;
+        //width: 80%;
 
         .field--name-title {
           a {
@@ -369,9 +376,9 @@ Desktop version of Lifestyle news view
         padding-bottom: 0;
         border: none;
       }
-      padding-right: 15%;
+      //padding-right: 15%;
       .layout__region--second{
-        margin-right:20% ;
+        //margin-right:20% ;
         a{
           @include overflow-text-l3;
         }
