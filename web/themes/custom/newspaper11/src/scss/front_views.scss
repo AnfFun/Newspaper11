@@ -617,4 +617,37 @@ Theming Perfomance training on frontpage
   }
 }
 
+/*
+Stylyzing Make it modern view on sidebar for mobile
+ */
+.sidebar .block {
+  background-color: $white;
+  border: none;
+}
+
+.block-views-blockmake-it-modern-sidebar-view-block-1 {
+  h2 {
+    background-color: $black;
+    @include Ftitle;
+    text-transform: uppercase;
+    width: 39%;
+    padding: 2%;
+  }
+
+  .view-id-make_it_modern_sidebar_view {
+    border-top: 2px black solid;
+    margin-top: -11px;
+  }
+  .block{
+    padding: 0;
+  }
+  .layout__region--content {
+    .block-field-blocknodearticlefield-media-for-content{
+
+    }
+  }
+
+
+}
+
 
