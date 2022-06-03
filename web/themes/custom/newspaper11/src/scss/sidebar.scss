@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+.region-sidebar-second {
+  /*
+  Configuring adv block for mobile version frontpage
+   */
+  .block-block-content88db23c7-445a-467a-be98-6d146edcb0b8 {
+    @include reset;
+    background-color: $white;
+    border: none;
+
+    .block-field-blockblock-contentadvfield-adv-media-for-block {
+      background-color: $white;
+      border: none;
+      @include reset;
+      margin-left: 8%;
+      margin-top: 10%;
+    }
+
+  }
+
+  /*
+  Configuring Stay conected mobile version
+   */
+  .block-views-blockstay-conected-view-block-1 {
+    display: none;
+
+
+  }
+
+}
+
+/*
+Configuring Stay conected desktop version
+ */
+@media screen and (min-width: 1024px) {
+  .region-sidebar-second {
+    .block-views-blockstay-conected-view-block-1 {
+      display: block;
+    }
+  }
+
+}
