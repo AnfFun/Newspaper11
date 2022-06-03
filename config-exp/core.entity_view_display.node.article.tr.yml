@@ -1,10 +1,10 @@
-uuid: e3040aca-b27b-43c1-87dd-f921dc47f26a
+uuid: 61ac6bda-de38-4633-8bb4-5e5990fff90b
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
-    - core.entity_view_mode.node.trending_now
+    - core.entity_view_mode.node.tr
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_description_text
@@ -32,8 +32,8 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          08d39bb7-e0f5-4d9a-b1dc-ea1ba32ed43b:
-            uuid: 08d39bb7-e0f5-4d9a-b1dc-ea1ba32ed43b
+          370b92b5-4028-4353-9202-389fdaa235ee:
+            uuid: 370b92b5-4028-4353-9202-389fdaa235ee
             region: content
             configuration:
               id: 'field_block:node:article:title'
@@ -54,10 +54,10 @@ third_party_settings:
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
-id: node.article.trending_now
+id: node.article.tr
 targetEntityType: node
 bundle: article
-mode: trending_now
+mode: tr
 content:
   body:
     type: text_default

@@ -1,10 +1,10 @@
-uuid: 5f53ed73-0938-41ea-bbca-8fadbd12a288
+uuid: 4d64f71e-c01f-4e58-b8f1-bea81970e0c4
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.trending_now
+id: node.tr
 label: 'Trending now'
 targetEntityType: node
 cache: true
