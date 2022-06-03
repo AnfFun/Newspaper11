@@ -1,0 +1,30 @@
+@import "mixin";
+@import "variables";
+
+.featured-top {
+  @include reset;
+  background-color: $white;
+  border: none;
+
+  h2 {
+    background-color: #222222;
+    @include Ftitle;
+    font-size: $f16;
+    height: 20px;
+    padding: 2%;
+    width: 29%;
+    margin-left: 35%;
+  }
+  .block-field-blocknodearticletitle{
+    a{
+      text-decoration: none;
+      color: $black;
+      //font-size: 14px;
+    }
+
+  }
+
+}
+//@media screen and (min-width: 1024px){
+//
+//}
