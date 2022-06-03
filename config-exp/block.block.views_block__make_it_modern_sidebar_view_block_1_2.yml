@@ -1,22 +1,22 @@
-uuid: 7b392770-d8ab-40bd-bcaf-7dc997c9e823
+uuid: c9ecc8a3-91b7-48c2-b98a-72b810949ea4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.perfomance_training
+    - views.view.make_it_modern_sidebar_view
   module:
     - system
     - views
   theme:
     - newspaper11
-id: views_block__perfomance_training_block_1_2
+id: views_block__make_it_modern_sidebar_view_block_1_2
 theme: newspaper11
-region: content
+region: sidebar_second
 weight: 0
 provider: null
-plugin: 'views_block:perfomance_training-block_1'
+plugin: 'views_block:make_it_modern_sidebar_view-block_1'
 settings:
-  id: 'views_block:perfomance_training-block_1'
+  id: 'views_block:make_it_modern_sidebar_view-block_1'
   label: ''
   label_display: visible
   provider: views
