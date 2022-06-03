@@ -641,9 +641,11 @@ Stylyzing Make it modern view on sidebar for mobile
   .block{
     padding: 0;
   }
-  .layout__region--content {
-    .block-field-blocknodearticlefield-media-for-content{
-
+  .block-field-blocknodearticletitle{
+    text-align: center;
+    margin: 5%;
+    a{
+      @include lit_titlename
     }
   }
 
