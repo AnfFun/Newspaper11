@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+.region-sidebar-second
+{
+  .block-block-content88db23c7-445a-467a-be98-6d146edcb0b8{
+    @include reset;
+    background-color: $white;
+    border: none;
+     .block-field-blockblock-contentadvfield-adv-media-for-block{
+       background-color: $white;
+       border: none;
+       @include reset;
+       margin-left: 6%;
+       margin-top: 10%;
+     }
+
+  }
+}
