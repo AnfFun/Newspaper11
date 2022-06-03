@@ -25,6 +25,23 @@
   }
 
 }
-//@media screen and (min-width: 1024px){
-//
-//}
+@media screen and (min-width: 1024px){
+.featured-top{
+  text-align: left;
+  margin-left: 27px;
+  h2{
+    @include reset;
+    float: left;
+    width: 8%;
+   padding: 14px;
+    padding-left: 16px;
+    margin-right: 1%;
+  }
+  .block-field-blocknodearticletitle{
+    padding-top: 1px;
+    a{
+    }
+
+  }
+}
+}
