@@ -41,3 +41,19 @@ Configuring Stay conected desktop version
   }
 
 }
+
+/*
+Configuring Holiday Recipes for mobile
+ */
+.block-views-blockholidays-recipe-block-1{
+  h2{
+    background-color: #8954c1;
+    color:$white;
+    width: 35%;
+    padding: 2%;
+  }
+  .view-display-id-block_1{
+    border-top: 2px solid #8954c1;
+    margin-top: -12px;
+  }
+}
