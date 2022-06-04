@@ -88,6 +88,15 @@ Configuring Holiday Recipes for mobile
     @include reset;
     color: #767676;
   }
+}
+@media screen and (min-width: 1024px){
+  .block-views-blockholidays-recipe-block-1 {
+    width: 300px;
+    h2{
+      width: 37%;
+    }
+
+  }
 
 }
 
