@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.make_it_modern
     - taxonomy.vocabulary.global_tags
   content:
+    - 'taxonomy_term:global_tags:3480a69c-ef14-4852-a12d-f11b6c2772da'
     - 'taxonomy_term:global_tags:efd6f170-4e9f-4528-868d-acf417610bda'
   module:
     - node
@@ -97,8 +99,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: ›
+            previous: ‹
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -165,9 +167,10 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: or
+          operator: and
           value:
-            - 11
+            28: 28
+            11: 11
           group: 1
           exposed: false
           expose:
@@ -197,20 +200,28 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           vid: global_tags
-          type: textfield
+          type: select
           hierarchy: false
           limit: true
           error_message: true
       style:
-        type: default
+        type: grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          uses_fields: false
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: make_it_modern
       query:
         type: views_query
         options:

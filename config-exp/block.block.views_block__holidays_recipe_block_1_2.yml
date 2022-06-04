@@ -1,0 +1,24 @@
+uuid: 0fd4589d-7056-4a35-b305-3ee710a217e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.holidays_recipe
+  module:
+    - views
+  theme:
+    - newspaper11
+id: views_block__holidays_recipe_block_1_2
+theme: newspaper11
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_block:holidays_recipe-block_1'
+settings:
+  id: 'views_block:holidays_recipe-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
