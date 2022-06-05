@@ -1,0 +1,11 @@
+uuid: 2d2b3038-eb3a-4519-ba60-98b0ed61ed0a
+langcode: en
+status: true
+dependencies: {  }
+id: article_section
+label: article-section
+classes: article-section1
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0
