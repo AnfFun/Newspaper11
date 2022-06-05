@@ -1,22 +1,22 @@
-uuid: a5037192-0e45-44e5-9bc9-19ff546601ce
+uuid: 5ac40809-59f1-45ac-bdeb-29edf15cc816
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.most_popular
   module:
     - system
     - views
   theme:
     - newspaper11
-id: views_block__lifestyle_news_block_1_2
+id: views_block__most_popular_block_1_2
 theme: newspaper11
-region: content
-weight: -11
+region: sidebar_second
+weight: 0
 provider: null
-plugin: 'views_block:lifestyle_news-block_1'
+plugin: 'views_block:most_popular-block_1'
 settings:
-  id: 'views_block:lifestyle_news-block_1'
+  id: 'views_block:most_popular-block_1'
   label: ''
   label_display: visible
   provider: views
