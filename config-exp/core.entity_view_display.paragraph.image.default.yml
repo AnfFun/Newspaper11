@@ -1,0 +1,58 @@
+uuid: 985fd238-ce70-407d-ad6b-e85b1bbe2f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_pmedia
+    - field.field.paragraph.image.layout_builder__layout
+    - paragraphs.paragraphs_type.image
+  module:
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1edabb7e-60cf-469e-8676-d15a1101eb1b:
+            uuid: 1edabb7e-60cf-469e-8676-d15a1101eb1b
+            region: content
+            configuration:
+              id: 'field_block:paragraph:image:field_pmedia'
+              label: Pmedia
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_pmedia:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

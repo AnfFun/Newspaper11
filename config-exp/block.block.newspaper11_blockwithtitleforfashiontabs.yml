@@ -12,7 +12,7 @@ dependencies:
 id: newspaper11_blockwithtitleforfashiontabs
 theme: newspaper11
 region: content
-weight: -8
+weight: -14
 provider: null
 plugin: 'block_content:ee8d10cd-f00a-494f-992e-1874a46ce72c'
 settings:

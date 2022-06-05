@@ -1,0 +1,29 @@
+uuid: 20e9e4d0-cb9c-4896-9eaf-d34d304956cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pmedia
+    - media.type.image
+    - paragraphs.paragraphs_type.image
+id: paragraph.image.field_pmedia
+field_name: field_pmedia
+entity_type: paragraph
+bundle: image
+label: Pmedia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

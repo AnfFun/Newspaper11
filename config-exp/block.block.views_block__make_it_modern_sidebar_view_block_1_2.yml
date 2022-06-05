@@ -1,22 +1,22 @@
-uuid: a5037192-0e45-44e5-9bc9-19ff546601ce
+uuid: c9ecc8a3-91b7-48c2-b98a-72b810949ea4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.make_it_modern_sidebar_view
   module:
     - system
     - views
   theme:
     - newspaper11
-id: views_block__lifestyle_news_block_1_2
+id: views_block__make_it_modern_sidebar_view_block_1_2
 theme: newspaper11
-region: content
-weight: -11
+region: sidebar_second
+weight: -12
 provider: null
-plugin: 'views_block:lifestyle_news-block_1'
+plugin: 'views_block:make_it_modern_sidebar_view-block_1'
 settings:
-  id: 'views_block:lifestyle_news-block_1'
+  id: 'views_block:make_it_modern_sidebar_view-block_1'
   label: ''
   label_display: visible
   provider: views

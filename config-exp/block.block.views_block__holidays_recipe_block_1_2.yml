@@ -1,22 +1,22 @@
-uuid: a5037192-0e45-44e5-9bc9-19ff546601ce
+uuid: 0fd4589d-7056-4a35-b305-3ee710a217e3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.holidays_recipe
   module:
     - system
     - views
   theme:
     - newspaper11
-id: views_block__lifestyle_news_block_1_2
+id: views_block__holidays_recipe_block_1_2
 theme: newspaper11
-region: content
+region: sidebar_second
 weight: -11
 provider: null
-plugin: 'views_block:lifestyle_news-block_1'
+plugin: 'views_block:holidays_recipe-block_1'
 settings:
-  id: 'views_block:lifestyle_news-block_1'
+  id: 'views_block:holidays_recipe-block_1'
   label: ''
   label_display: visible
   provider: views
