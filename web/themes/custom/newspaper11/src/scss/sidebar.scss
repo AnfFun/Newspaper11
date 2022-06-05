@@ -41,3 +41,47 @@ Configuring Stay conected desktop version
   }
 
 }
+
+/*
+ Theming Most popular for mobile
+ */
+.block-views-blockmost-popular-block-1 {
+  h2 {
+    border: none;
+    background-color: $black;
+    color: $white;
+    @include reset;
+    text-transform: uppercase;
+    width: 38%;
+    padding: 2%;
+  }
+
+  .view-display-id-block_1{
+    border-top: 2px $black solid;
+    margin-top: -10px;
+  }
+
+  .block-field-blocknodearticlefield-media-for-content{
+    @include reset;
+    border: none;
+    img{
+      width: 130px;
+    }
+
+  }
+  .layout__region--second{
+    margin-top: 10px;
+  }
+  .block-field-blocknodearticletitle{
+    @include lit_titlename;
+    @include reset;
+    @include overflow-text-l3;
+  }
+  .block-field-blocknodearticlecreated{
+    @include date;
+    .content{
+      @include reset;
+    }
+    @include reset;
+  }
+}
