@@ -1,0 +1,10 @@
+uuid: 6e1cb85c-1b05-412a-b33d-61368ea91dee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.make_it_modern
+label: 'Make it Modern'
+targetEntityType: node
+cache: true
