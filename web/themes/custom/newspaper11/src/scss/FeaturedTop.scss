@@ -1,0 +1,47 @@
+@import "mixin";
+@import "variables";
+
+.featured-top {
+  @include reset;
+  background-color: $white;
+  border: none;
+
+  h2 {
+    background-color: #222222;
+    @include Ftitle;
+    font-size: $f16;
+    height: 20px;
+    padding: 2%;
+    width: 29%;
+    margin-left: 35%;
+  }
+  .block-field-blocknodearticletitle{
+    a{
+      text-decoration: none;
+      color: $black;
+      //font-size: 14px;
+    }
+
+  }
+
+}
+@media screen and (min-width: 1024px){
+.featured-top{
+  text-align: left;
+  margin-left: 27px;
+  h2{
+    @include reset;
+    float: left;
+    width: 8%;
+   padding: 14px;
+    padding-left: 16px;
+    margin-right: 1%;
+  }
+  .block-field-blocknodearticletitle{
+    padding-top: 1px;
+    a{
+    }
+
+  }
+}
+}
