@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixin";
+
+/*
+Theming article page for mobile
+ */
+.d-bread {
+  a {
+    color: #767676;
+  }
+}
+
+.d-tag {
+  a {
+    background-color: #DF362D;
+    color:$white;
+    padding: 10%;
+    font-size: 10px;
+  }
+}
+.d-title{
+  @include lit_titlename;
+  font-size: 21px;
+}
+.d-author{
+  float: left;
+  margin-right: 10px;
+
+}
