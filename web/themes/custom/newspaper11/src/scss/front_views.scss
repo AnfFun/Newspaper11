@@ -618,6 +618,68 @@ Theming Perfomance training on frontpage
 }
 
 /*
+Stylyzing Make it modern view on sidebar for mobile
+ */
+.sidebar .block {
+  background-color: $white;
+  border: none;
+}
+
+.block-views-blockmake-it-modern-sidebar-view-block-1 {
+  h2 {
+    background-color: $black;
+    @include Ftitle;
+    text-transform: uppercase;
+    width: 39%;
+    padding: 2%;
+  }
+
+  .view-id-make_it_modern_sidebar_view {
+    border-top: 2px black solid;
+    margin-top: -11px;
+  }
+  .block{
+    padding: 0;
+  }
+  .block-field-blocknodearticletitle{
+    text-align: center;
+    margin: 5%;
+    a{
+      @include lit_titlename
+    }
+  }
+
+
+}
+/*
+Stylyzing Make it modern view on sidebar for mobile
+ */
+@media screen and (min-width: 1024px){
+  .block-views-blockmake-it-modern-sidebar-view-block-1{
+    max-width: none;
+    img{
+      width: 200px;
+      height: 80px;
+    }
+    width: 300px;
+    h2{
+      width: 43%;
+    }
+    .block-field-blocknodearticlefield-media-for-content{
+      margin-bottom: 0;
+    }
+    .block-field-blocknodearticletitle{
+      @include reset;
+      text-align: left;
+      @include overflow-text-l3;
+      a{
+        font-size: 12px;
+        width: 300px;
+        margin-top: 0;
+        padding-top: -10%;
+      }
+    }
+
 Theming Latest article for mobile
  */
 .block-views-blocklatest-article-block-1 {
