@@ -11,6 +11,9 @@ dependencies:
     - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_paragraph
+    - field.field.node.article.field_description_text
+    - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_paragraph_for_article
     - field.field.node.article.field_tags
     - field.field.node.article.layout_builder__layout
     - image.style.large
@@ -133,4 +136,5 @@ content:
 hidden:
   field_deafult_article_style: true
   field_paragraph: true
+  field_paragraph_for_article: true
   layout_builder__layout: true

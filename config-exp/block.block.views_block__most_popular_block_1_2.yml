@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.most_popular
   module:
+    - system
     - views
   theme:
     - newspaper11
@@ -22,3 +23,8 @@ settings:
   views_label: ''
   items_per_page: none
 visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

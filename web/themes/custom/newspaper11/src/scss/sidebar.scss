@@ -41,3 +41,127 @@ Configuring Stay conected desktop version
   }
 
 }
+
+/*
+Configuring Holiday Recipes for mobile
+ */
+.block-views-blockholidays-recipe-block-1{
+  h2{
+    background-color: #8954c1;
+    color:$white;
+    width: 35%;
+    padding: 2%;
+  }
+  .view-display-id-block_1 {
+    border-top: 2px solid #8954c1;
+    margin-top: -12px;
+  }
+
+  .block-field-blocknodearticletitle{
+    @include reset;
+    a{
+      text-decoration: none;
+      color: $black;
+      font-size: 21px;
+    }
+  }
+  .block-field-blocknodearticleuid{
+    @include reset;
+    float: left;
+    a{
+      @include lit_titlename;
+      font-size: 13px;
+    }
+    margin-right: 5%;
+
+  }
+  .block-field-blocknodearticlecreated{
+    @include reset;
+    @include date;
+
+  }
+  .block-field-blocknodearticlefield-media-for-content{
+    @include reset;
+    border: none;
+  }
+  .block-field-blocknodearticlebody{
+    @include reset;
+    color: #767676;
+  }
+}
+@media screen and (min-width: 1024px){
+  .block-views-blockholidays-recipe-block-1 {
+    width: 300px;
+    h2{
+      width: 37%;
+    }
+
+  }
+
+}
+
+ Theming Most popular for mobile
+ */
+.block-views-blockmost-popular-block-1 {
+  h2 {
+    border: none;
+    background-color: $black;
+    color: $white;
+    @include reset;
+    text-transform: uppercase;
+    width: 38%;
+    padding: 2%;
+  }
+
+  .view-display-id-block_1{
+    border-top: 2px $black solid;
+    margin-top: -10px;
+  }
+
+  .block-field-blocknodearticlefield-media-for-content{
+    @include reset;
+    border: none;
+    img{
+      width: 130px;
+    }
+
+  }
+  .layout__region--second{
+    margin-top: 10px;
+  }
+  .block-field-blocknodearticletitle{
+    @include lit_titlename;
+    @include reset;
+    @include overflow-text-l3;
+  }
+
+  .block-field-blocknodearticlecreated {
+    @include date;
+
+    .content {
+      @include reset;
+    }
+
+    @include reset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .block-views-blockmost-popular-block-1 {
+    h2 {
+      width: 48%;
+      padding: 5px 18px;
+    }
+     .layout__region--second{
+       margin-left: 10px;
+
+     }
+    .block-field-blocknodearticletitle{
+      @include overflow-text;
+    }
+    .layout__region--second{
+      margin-top: 5px;
+    }
+  }
+}
