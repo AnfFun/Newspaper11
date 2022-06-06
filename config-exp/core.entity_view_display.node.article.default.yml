@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_deafult_article_style
     - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_paragraph
@@ -29,7 +30,23 @@ third_party_settings:
         layout_id: layout_builder_blank
         layout_settings:
           label: ''
-        components: {  }
+        components:
+          cc02b113-60ab-45eb-8094-8fff724a7e2d:
+            uuid: cc02b113-60ab-45eb-8094-8fff724a7e2d
+            region: null
+            configuration:
+              id: 'field_block:node:article:field_deafult_article_style'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
@@ -54,6 +71,14 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_deafult_article_style:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: null
   field_description_text:
     type: text_default
     label: above

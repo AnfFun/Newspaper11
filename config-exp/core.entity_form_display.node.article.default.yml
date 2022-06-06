@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_deafult_article_style
     - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_paragraph
@@ -34,6 +35,16 @@ content:
     weight: 5
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_deafult_article_style:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_media_for_content:
     type: media_library_widget
