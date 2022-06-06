@@ -30,7 +30,7 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 50-50
+          column_widths: 33-67
         components:
           7e215791-c9fd-417c-a982-3b66c03a6289:
             uuid: 7e215791-c9fd-417c-a982-3b66c03a6289
@@ -49,25 +49,6 @@ third_party_settings:
                 settings:
                   image_link: content
                   image_style: thumbnail
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          8d0f2ff6-f914-4e51-8e6f-b6c86ce5aa32:
-            uuid: 8d0f2ff6-f914-4e51-8e6f-b6c86ce5aa32
-            region: second
-            configuration:
-              id: 'field_block:node:article:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -91,6 +72,25 @@ third_party_settings:
                   timezone: ''
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+          8d0f2ff6-f914-4e51-8e6f-b6c86ce5aa32:
+            uuid: 8d0f2ff6-f914-4e51-8e6f-b6c86ce5aa32
+            region: second
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 _core:
