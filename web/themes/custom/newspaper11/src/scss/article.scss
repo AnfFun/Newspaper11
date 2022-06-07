@@ -1,0 +1,197 @@
+@import "variables";
+@import "mixin";
+
+/*
+Theming article page for mobile
+ */
+.d-section {
+  margin-left: 12%
+}
+
+.d-bread {
+  a {
+    color: #767676;
+  }
+}
+
+.d-tag {
+  a {
+    background-color: #DF362D;
+    color: $white;
+    padding: 10%;
+    font-size: 10px;
+  }
+}
+
+.d-title {
+  @include lit_titlename;
+  font-size: 21px;
+}
+
+.d-author {
+  float: left;
+  margin-right: 10px;
+  margin-top: -5px;
+
+  a {
+    @include lit_titlename;
+    font-size: 10px;
+  }
+
+}
+
+.d-date {
+
+  font-size: 10px;
+}
+
+.d-content {
+  font-size: 16px;
+  padding: 5px;
+
+  .block-field-blockparagraphimagefield-pmedia {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+
+  .field__items {
+    div:nth-child(2) {
+      margin-bottom: 26px;
+    }
+
+    div:nth-child(3) {
+      margin-bottom: 26px;
+      @include lit_titlename;
+      font-size: 18px;
+    }
+
+    div:nth-child(9) {
+      margin-top: 26px;
+      margin-bottom: 26px;
+      font-size: 22px;
+      line-height: 30px;
+      color: $qout;
+      font-style: italic;
+      text-align: center;
+    }
+
+    div:nth-child(10) {
+      margin-bottom: 26px;
+    }
+  }
+
+}
+
+.d-flippy {
+  ul {
+    li {
+      @include reset;
+    }
+
+    @include reset;
+  }
+
+  .flippy {
+    @include reset;
+    display: block;
+
+    a {
+      color: #767676;
+    }
+
+    .flippy-previous {
+      float: left;
+
+    }
+
+    .flippy-next {
+      float: right;
+    }
+  }
+}
+
+/*
+Theming article page for desktop
+ */
+@media screen and (min-width: 1024px) {
+  .d-title {
+    font-size: 38px;
+    width: 850px;
+  }
+  .d-author {
+    a {
+      font-size: 12px;
+    }
+  }
+  .d-date {
+    font-size: 10px;
+
+  }
+  .d-content {
+    width: 750px;
+
+    .field__items {
+      img {
+        max-width: none;
+      }
+
+      div:nth-child(1) {
+        img {
+          width: 696px;
+        }
+      }
+
+      div:nth-child(2) {
+        margin: 0 80px 26px 48px;
+      }
+
+      div:nth-child(3) {
+        margin: 0 80px 26px 48px;
+
+      }
+
+      div:nth-child(4) {
+        margin: 0 80px 26px 48px;
+
+      }
+
+      div:nth-child(6) {
+        margin: 0 80px 26px 48px;
+
+      }
+
+      div:nth-child(7) {
+        float: right;
+        margin: 0 80px 26px 48px;
+
+
+        img {
+          width: 307px;
+          height: 444px;
+        }
+      }
+
+      div:nth-child(8) {
+        margin: 0 80px 26px 48px;
+
+      }
+
+      div:nth-child(9) {
+        margin: 0 80px 26px 48px;
+        font-size: 32px;
+        line-height: 40px;
+
+      }
+
+      div:nth-child(10) {
+        margin: 0 80px 26px 48px;
+
+      }
+    }
+  }
+  .d-flippy{
+    margin-top: 10%;
+  }
+
+}

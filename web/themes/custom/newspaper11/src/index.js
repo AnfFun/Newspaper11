@@ -12,3 +12,7 @@ import './scss/scrollToTop.scss';
 js
  */
 import './js/scroll';
+/*
+
+ */
+import './scss/article.scss';

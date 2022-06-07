@@ -1,0 +1,19 @@
+uuid: e5c87a52-b34c-4ddb-944a-9fb91632a855
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder
+    - paragraphs
+id: paragraph.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: paragraph
+type: layout_section
+settings: {  }
+module: layout_builder
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 868d5c9a-7067-4765-97da-4492ccedfcb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pcontent
+    - paragraphs.paragraphs_type.content
+id: paragraph.content.field_pcontent
+field_name: field_pcontent
+entity_type: paragraph
+bundle: content
+label: Pcontent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

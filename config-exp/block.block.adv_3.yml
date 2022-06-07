@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:adv:88db23c7-445a-467a-be98-6d146edcb0b8'
   module:
     - block_content
-    - system
   theme:
     - newspaper11
 id: adv_3
@@ -24,8 +23,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }
