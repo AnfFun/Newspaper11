@@ -654,88 +654,99 @@ Stylyzing Make it modern view on sidebar for mobile
 /*
 Stylyzing Make it modern view on sidebar for mobile
  */
-@media screen and (min-width: 1024px){
-  .block-views-blockmake-it-modern-sidebar-view-block-1{
+@media screen and (min-width: 1024px) {
+  .block-views-blockmake-it-modern-sidebar-view-block-1 {
     max-width: none;
-    img{
+
+    img {
       width: 200px;
       height: 80px;
     }
+
     width: 300px;
-    h2{
+
+    h2 {
       width: 43%;
     }
-    .block-field-blocknodearticlefield-media-for-content{
+
+    .block-field-blocknodearticlefield-media-for-content {
       margin-bottom: 0;
     }
-    .block-field-blocknodearticletitle{
+
+    .block-field-blocknodearticletitle {
       @include reset;
       text-align: left;
       @include overflow-text-l3;
-      a{
+
+      a {
         font-size: 12px;
         width: 300px;
         margin-top: 0;
         padding-top: -10%;
       }
     }
-
-Theming Latest article for mobile
- */
-.block-views-blocklatest-article-block-1 {
-  h2 {
-    background-color: $black;
-    color: $white;
-    width: 32%;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 2%;
   }
-
-  .view-display-id-block_1 {
-    border-top: solid 2px $black;
-    margin-top: -10px;
-
-  }
-
-  .block-field-blocknodearticletitle {
-
-    font-size: 21px;
-
-    a {
-      color: black;
-    }
-
-  }
-
-  .block-field-blocknodearticlecreated {
-    .content {
-      @include reset;
-      margin-bottom: 20px;
-    }
-  }
-
-  /*
-Theming Latest article for mobile
- */
 }
 
-@media screen and (min-width: 1024px) {
-  .block-views-blocklatest-article-block-1 {
-    img{
-      width: 453px;
-      height: 255px;
+    /*
+Theming Latest article for mobile
+ */
+    .block-views-blocklatest-article-block-1 {
+      h2 {
+        background-color: $black;
+        color: $white;
+        width: 32%;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 2%;
+      }
+
+      .view-display-id-block_1 {
+        border-top: solid 2px $black;
+        margin-top: -10px;
+
+      }
+
+      .block-field-blocknodearticletitle {
+
+        font-size: 21px;
+
+        a {
+          color: black;
+        }
+
+      }
+
+      .block-field-blocknodearticlecreated {
+        .content {
+          @include reset;
+          margin-bottom: 20px;
+        }
+      }
+
+      /*
+    Theming Latest article for mobile
+     */
+    }
+
+    @media screen and (min-width: 1024px) {
+      .block-views-blocklatest-article-block-1 {
+        img {
+          width: 453px;
+          height: 255px;
+
+        }
+
+        h2 {
+          width: 13%;
+          padding: 5px 18px;
+        }
+
+        .views-view-grid.horizontal .views-row {
+          border: none;
+        }
+      }
 
     }
-    h2{
-      width: 13%;
-      padding: 5px 18px;
-    }
-    .views-view-grid.horizontal .views-row{
-      border: none;
-    }
-  }
-
-}
 
 
