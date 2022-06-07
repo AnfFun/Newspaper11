@@ -7,9 +7,10 @@ dependencies:
     - core.entity_view_mode.node.don
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_deafult_article_style
     - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
-    - field.field.node.article.field_paragraph_for_article
+    - field.field.node.article.field_paragraph
     - field.field.node.article.field_tags
     - field.field.node.article.layout_builder__layout
     - image.style.large
@@ -19,6 +20,7 @@ dependencies:
   module:
     - comment
     - layout_builder
+    - layout_discovery
     - media
     - text
     - user
@@ -28,6 +30,41 @@ third_party_settings:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout_builder_styles_style: article_section
+        components:
+          233e1413-4377-47d2-a228-29b1a9784a96:
+            uuid: 233e1413-4377-47d2-a228-29b1a9784a96
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_tags'
+              label: Tags
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout_builder_styles_style: ''
+        components: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_twocol_section
         layout_settings:
@@ -120,5 +157,6 @@ content:
     weight: 3
     region: content
 hidden:
-  field_paragraph_for_article: true
+  field_deafult_article_style: true
+  field_paragraph: true
   layout_builder__layout: true

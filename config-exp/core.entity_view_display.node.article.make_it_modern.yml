@@ -7,6 +7,10 @@ dependencies:
     - core.entity_view_mode.node.make_it_modern
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_deafult_article_style
+    - field.field.node.article.field_description_text
+    - field.field.node.article.field_media_for_content
+    - field.field.node.article.field_paragraph
     - field.field.node.article.field_description_text
     - field.field.node.article.field_media_for_content
     - field.field.node.article.field_paragraph_for_article
@@ -130,5 +134,7 @@ content:
     weight: 3
     region: content
 hidden:
+  field_deafult_article_style: true
+  field_paragraph: true
   field_paragraph_for_article: true
   layout_builder__layout: true

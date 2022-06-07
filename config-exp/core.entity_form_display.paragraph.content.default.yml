@@ -1,19 +1,17 @@
-uuid: 18dfdfc3-2263-4131-bd35-c0195ecf8b76
+uuid: 706dc80d-59dd-4408-8fa3-11c2b21d020d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text.field_text_parag
-    - paragraphs.paragraphs_type.text
-  module:
-    - text
-id: paragraph.text.default
+    - field.field.paragraph.content.field_pcontent
+    - paragraphs.paragraphs_type.content
+id: paragraph.content.default
 targetEntityType: paragraph
-bundle: text
+bundle: content
 mode: default
 content:
-  field_text_parag:
-    type: text_textarea
+  field_pcontent:
+    type: string_textarea
     weight: 0
     region: content
     settings:
