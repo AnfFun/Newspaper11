@@ -12,13 +12,13 @@
 
   /**
    * @ParagraphsBehavior(
-   *   id = "paragraphplus_image_and_text",
+   *   id = "pubdate_image_and_text",
    *   label = @Translation("Paragraph Image and Text settings"),
    *   description = @Translation("Allows to select image size and position."),
    *   weight = 0,
    * )
    */
-  class paragraphplus extends ParagraphsBehaviorBase {
+  class pubdate extends ParagraphsBehaviorBase {
 
     /**
      * {@inheritdoc}
