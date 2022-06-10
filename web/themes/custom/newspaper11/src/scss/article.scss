@@ -17,10 +17,16 @@ Theming article page for mobile
 }
 
 .d-tag {
+  width: auto;
+  height: 30px;
+  text-transform: uppercase;
+
   a {
+
     background-color: #DF362D;
     color: $white;
-    padding: 10%;
+    padding: 5px;
+
     font-size: 10px;
   }
 }
@@ -115,17 +121,4 @@ Can be Uncomented
     }
   }
 }
-
-/*
-Theming article page for desktop
- */
-/*
-Uncomment in case using other paragraph
-
-
- */
-
-/*
- Case when we using  Paragraph behaviour
- */
 
