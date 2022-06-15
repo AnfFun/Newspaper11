@@ -1,6 +1,6 @@
 <?php
 
-  namespace Drupal\pubdate\Plugin\paragraphs\Behavior;
+    namespace Drupal\pubdate\Plugin\paragraphs\Behavior;
 
   use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
   use Drupal\Core\Form\FormStateInterface;
