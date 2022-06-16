@@ -5,6 +5,8 @@
   use Drupal\Core\Block\BlockBase;
   use Drupal\Core\Form\FormStateInterface;
   use Drupal\Core\Session\AccountInterface;
+  use GuzzleHttp\Client;
+  use GuzzleHttp\Exception\RequestException;
 
   /**
    * Provides a block with simple text.
@@ -20,30 +22,23 @@
      * {@inheritdoc}
      */
     public function build() {
+      $client = new Client();
+      try {
+        $response = $client->get('https://api.fastforex.io/fetch-all?api_key=62a9217c31-5f4583eee5-rdiozz');
+        $result   = json_decode($response->getBody(), TRUE);
+      }
+      catch (RequestException $e) {
+        return '';
+      }
       return [
         '#type'   => 'markup',
-        '#markup' => 'Exchange rate output' . '<br>' . 'Hello',
+        '#markup' => $result["results"]["UAH"] . ' -UAH',
 
       ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function blockAccess(AccountInterface $account) {
-      return AccessResultAllowed::allowedIfHasPermission($account, 'access content');
-    }
-
-    /**
-     * {@inheritdoc }
-     */
-    public function blockForm($form, FormStateInterface $form_state) {
-      $config = $this->getConfiguration();
-
-      return $form;
-    }
-    public function blockSubmit($form, FormStateInterface $form_state) {
-    $this->configuration['simple_block_settings'] = $form_state->getValue('simple_block_settings');
+    public function getCacheMaxAge() {
+      return 0;
     }
 
   }
