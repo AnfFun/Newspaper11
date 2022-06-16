@@ -1,0 +1,25 @@
+@import "mixin";
+@import "variables";
+
+.image-position--left {
+  .field--type-image {
+    width: 50%;
+    float: left;
+    img{
+      margin-right: 25px;
+      margin-top: 5px;
+    }
+  }
+}
+.image-position--right{
+  .field--type-image {
+    width: 50%;
+    float: right;
+    img{
+      margin-left: 25px;
+      margin-top: 5px;
+    }
+  }
+}
+
+

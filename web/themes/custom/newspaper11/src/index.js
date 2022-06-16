@@ -13,6 +13,7 @@ js
  */
 import './js/scroll';
 /*
-
+module css
  */
 import './scss/article.scss';
+import './scss/pubdate.scss';
