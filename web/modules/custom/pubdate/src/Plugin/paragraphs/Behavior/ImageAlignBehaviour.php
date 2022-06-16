@@ -18,7 +18,7 @@
    *   weight = 0,
    * )
    */
-  class pubdate extends ParagraphsBehaviorBase {
+  class ImageAlignBehaviour extends ParagraphsBehaviorBase {
 
     /**
      * {@inheritdoc}
