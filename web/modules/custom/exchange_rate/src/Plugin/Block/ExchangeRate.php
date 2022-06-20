@@ -21,6 +21,11 @@
     /**
      * {@inheritdoc}
      */
+    function afilt($value){
+      if ($value == "UAH" or $value== "PLN"){
+        return 1;
+      }
+    }
     public function build() {
       $client = new Client();
       try {
@@ -30,10 +35,19 @@
       catch (RequestException $e) {
         return '';
       }
+      $valueout = '';
+//      foreach($result ["results"] as $key => $value)
+//      {
+//        $valueout .= $key . ' - ' . round($value,2) . '<br>';
+//      }
+      foreach (['UAH', 'EUR', 'GBP', 'CHF', 'PLD'] as $key => $value)
+      {
+
+          $result["results"][$value]. "<br>";
+      }
       return [
         '#type'   => 'markup',
-        '#markup' => $result["results"]["UAH"] . ' -UAH',
-
+        '#markup' => $valueout
       ];
     }
 

@@ -32,12 +32,12 @@ services:
       PHP_XDEBUG_DEFAULT_ENABLE: 1
       PHP_XDEBUG_REMOTE_CONNECT_BACK: 0
       PHP_XDEBUG_MODE: debug
-      PHP_IDE_CONFIG: serverName=phpstorm
-      PHP_XDEBUG_IDEKEY: "PHPSTORM"
+      PHP_IDE_CONFIG: serverName=docker
+      PHP_XDEBUG_IDEKEY: "docker"
       PHP_XDEBUG_REMOTE_HOST: 172.17.0.1
       #      PHP_XDEBUG_CLIENT_HOST: host.docker.internal # Docker 18.03+ Mac/Win
       PHP_XDEBUG_LOG: /tmp/php-xdebug.log
-      XDEBUG_SESSION: XDEBUG_SESSION=default
+      XDEBUG_SESSION: XDEBUG_SESSION=docker
     volumes:
     - ./:/var/www/html
 

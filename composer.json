@@ -23,6 +23,8 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/devel": "^4.1",
+        "drupal/devel_kint_extras": "^1.0",
         "drupal/flippy": "^1.0@beta",
         "drupal/layout_builder_component_attributes": "^2.0",
         "drupal/layout_builder_styles": "^1.0@beta",
